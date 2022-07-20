@@ -62,6 +62,7 @@ body{
     line-height: 64px;
     cursor: pointer;
     position: relative;
+    transition: all 0.5s;
 }
 
 #header nav .gnb > li:last-child{
@@ -77,7 +78,7 @@ body{
 }
 #header nav .gnb > li:hover{
     transform: scale(1.2);
-    transition: all 0.5s;
+
 }
 
 
@@ -144,6 +145,30 @@ body{
     transform: translate(-50%,-50%);
 }
 /* ! second_page END */
+
+.slide_btn{
+    position:relative;
+}
+
+.slide_btn > div{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 0;
+    transition: 0.5s;
+}
+.slide_btn > div:first-child{
+    opacity: 1;
+    z-index: 1;
+}
+.slide_btn.stop > div:first-child{
+    opacity: 0;
+    z-index: 0;
+}
+.slide_btn.stop > div:last-child{
+    opacity: 1;
+    z-index: 1;
+}
 
 
 

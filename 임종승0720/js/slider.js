@@ -31,7 +31,5 @@ $(".slide_btn").on("click",function(){
     } else {
         $('.slider').slick('slickPlay');
     }
-
-
 });
 

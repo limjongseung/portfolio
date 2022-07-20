@@ -17,7 +17,9 @@ $(function(){
         'onLeave' : function (index, nextIndex, direction){
             if (index == 3 && direction == 'up'){
                 $("#header").removeClass("on");
-            } 
+            } else if(index ==4 && direction =='up'){
+                $("#header").removeClass("gucci");
+            }
         }
     });
 });

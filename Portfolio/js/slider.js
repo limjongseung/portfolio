@@ -10,10 +10,22 @@ $(".slider").slick({
     fade:true,
     prevArrow : $(".slider_prev"),
     nextArrow: $(".slider_next"),
-    dotsClass: $(".slider_dots"),
-    // dotsClass: "slider_dots"      //*dots 버튼의 클래스
+    asNavFor: ".slider_nav"
 });
 
+$('.slider_nav').slick({
+    vertical:true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider',
+    arrows:false
+    // dots: true,
+    // centerMode: true,
+    // focusOnSelect: true
+  });
+
+
+// 재생 정지 버튼 컨트롤
 $(".play").on("click",function(){
     $(".slider").slick("slickPlay");
 });
@@ -21,4 +33,15 @@ $(".play").on("click",function(){
 $(".stop").on("click",function(){
     $(".slider").slick("slickPause");
 });
+
+$(".slide_btn").on("click",function(){
+    $(this).toggleClass("stop");
+    if($(this).hasClass("stop")){
+        $(".slider").slick("slickPause");
+    }else{
+        $(".slider").slick("slickPlay");
+    }
+});
+
+
 

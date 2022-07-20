@@ -146,6 +146,9 @@ body{
 }
 /* ! second_page END */
 
+
+/*  재생,멈춤 버튼 */
+
 .slide_btn{
     position:relative;
 }

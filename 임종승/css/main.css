@@ -1,0 +1,117 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#header{
+    width:100%;
+    position: fixed;  left: 0; top: -100px;
+    margin: 30px 50px;
+    z-index: 99;
+    opacity: 0;
+    transition:all 0.5s;
+}
+#header.on{
+    top: 0;
+    opacity: 1;
+}
+
+
+#header nav .gnb{
+    position: relative;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 30px;
+}
+#header nav .gnb> li {
+
+    height:64px;
+    cursor: pointer;
+    position:relative;;
+}
+#header nav .gnb > li:last-child{
+    padding: 5px 70px;
+    border: 2px solid black; border-radius: 40px;
+    font-size: 50px;
+}
+#header nav .gnb > li:last-child:hover{
+    border: 2px solid gray;
+    color: gray;
+}
+/* ! 질문 사항 sub li 정렬이 맞지 않음  */
+/* ! sub li 애니메이션 효과가 별로임 jquery로 구현  -> 구현이 잘 안됨*/
+
+#header nav .gnb >li .sub{
+    width:100px;
+    height:0;
+    overflow:hidden;
+    position: absolute; top: 60px;left:50%;transform:translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    transition:all 0.5s;
+}
+#header nav .gnb >li:hover .sub{
+    height:96px;
+}
+#header nav .gnb >li .sub >li{
+    margin-bottom: 5px;
+}
+#header nav .gnb >li .sub >li a{}
+
+/* ! header END */
+
+#full_page{}
+#full_page .first_page{
+    background: url(../img/smoke_portfolio.jpg) no-repeat ;
+    background-size: cover;
+}
+
+#full_page .first_page .adidas_logo{
+    position: relative;
+    position: absolute; 
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 400px;
+}
+#full_page .adidas_text {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+}
+#full_page .scroll_down{
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

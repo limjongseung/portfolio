@@ -23,7 +23,6 @@ body{
 
 .scroll_down i:first-child{
     position: fixed;
-    display: block;
 }
 
 .scroll_down .fa-solid{

@@ -36,6 +36,9 @@ body{
 .scroll_down.white{
     color: white;
 }
+.scroll_down.gucci{
+    color: #D2C8AB;
+}
 
 /* ! header */
 #header{

@@ -24,7 +24,6 @@ $('.slider_nav').slick({
     // focusOnSelect: true
   });
 
-
 // 재생 정지 버튼 컨트롤
 $(".play").on("click",function(){
     $(".slider").slick("slickPlay");
@@ -42,6 +41,38 @@ $(".slide_btn").on("click",function(){
         $(".slider").slick("slickPlay");
     }
 });
+
+
+//slider_gucci
+
+$(".gucci_slider").slick({
+    infinite:true,
+    autoplay:true,
+    pauseOnHover:true,
+    autoplaySpeed:3000,
+    speed: 1000,
+    slidesToShow:1,              
+    slidesToScroll:1,         
+    fade:true,
+    prevArrow : $(".right_arrow"),
+    nextArrow: $(".left_arrow")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

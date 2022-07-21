@@ -28,11 +28,13 @@ body{
 
 .scroll_down .fa-solid{
     width:150px;
-    
     text-align: center;
 }
 .scroll_down.dark{
     color:black;
+}
+.scroll_down.white{
+    color: white;
 }
 
 /* ! header */
@@ -227,8 +229,6 @@ body{
     width: 280px;
     font-size: 60px;
 }
-
-
 /* ! third_page END */
 
 #full_page .fourth_page{
@@ -241,6 +241,13 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/* ! fourth_page END */
+
+#full_page .fifth_page {
+    background: black;
+}
+
 
 
 

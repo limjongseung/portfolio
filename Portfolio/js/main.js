@@ -19,6 +19,11 @@ $(function(){
                 $("#header").removeClass("on");
             } else if(index ==4 && direction =='up'){
                 $("#header").removeClass("gucci");
+                $("#header li:first-child").show();
+                $("#header li.gucci_color").hide();
+            }else if(index ==3 && direction =="down"){
+                $("#header li.gucci_color").show();
+                $("#header li:first-child").hide();
             }
         }
     });

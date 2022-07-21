@@ -13,15 +13,22 @@ body{
 .scroll_down {
     position: absolute;
     left: 50%;
-    bottom: 30px;
+    bottom: 50px;
     transform: translateX(-50%);
     font-family:sans-serif;
     color: white;
     font-weight: 300;
     font-size: 30px;
 }
+
+.scroll_down i:first-child{
+    position: fixed;
+    display: block;
+}
+
 .scroll_down .fa-solid{
     width:150px;
+    
     text-align: center;
 }
 .scroll_down.dark{
@@ -48,8 +55,10 @@ body{
 #header.on.gucci nav .gnb >li:last-child{
     border: 2px solid #D2C8AB;
 }
-
-
+#header li.white,
+#header li.gucci_color{
+    display: none;
+}
 #header nav .gnb{
     position: relative;
     display: flex;  
@@ -226,6 +235,12 @@ body{
     background: black;
 }
 
+#full_page .fourth_page .gucci_adidas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 
 

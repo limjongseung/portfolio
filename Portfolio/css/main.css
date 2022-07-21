@@ -83,10 +83,6 @@ body{
     line-height: 50px;
 }
 
-#header nav .gnb > li:last-child:hover{
-    border: 2px solid gray;
-    color: gray;
-}
 #header nav .gnb > li:hover{
     transform: scale(1.2);
 }
@@ -247,6 +243,17 @@ body{
 #full_page .fifth_page {
     background: black;
 }
+
+#full_page .fifth_page .gucci_slider{
+    position: absolute;
+    top: 223px;
+    left: 114px; 
+    width: 500px;
+    height: 570px;  
+}
+
+
+
 
 
 

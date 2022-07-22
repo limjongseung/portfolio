@@ -8,7 +8,6 @@ body{
     object-fit: cover;
     background-attachment: fixed;
 }
-
 /* anchor module */
 .move_first{
     position: absolute;
@@ -20,7 +19,6 @@ body{
     border: 2px solid black;
     border-radius: 80px;
 }
-
 /*  scroll down module */
 .scroll_down {
     position: absolute;
@@ -33,25 +31,15 @@ body{
     font-size: 30px;
 }
 
+.scroll_down i:first-child{
+    position: fixed;
+}
+
 .scroll_down .fa-arrow-down{
     width:150px;
     text-align: center;
-    animation:arrow 1.5s infinite ease-in-out;
 }
 
-@keyframes arrow{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform:translateY(20px);
-    }
-    100%{
-        transform:translateY(0px);
-    }
-}
-
-/*  scroll_down color */
 .dark{
     color:black;
     border-color: black;
@@ -64,6 +52,7 @@ body{
     color: #D2C8AB;
     border-color: #D2C8AB;
 }
+
 /* ! header */
 #header{
     width:100%;
@@ -100,7 +89,7 @@ body{
     line-height: 64px;
     cursor: pointer;
     position: relative;
-    transition: transform 0.5s;
+    transition: all 0.5s;
 }
 
 #header nav .gnb > li:last-child{
@@ -156,7 +145,6 @@ body{
 #full_page .first_page .adidas_biglogo img{
     animation: opacity 3s;
 }
-
 @keyframes opacity {
     from {
         opacity: 0;
@@ -194,6 +182,7 @@ body{
     padding: 40px 4px 0px;
     height: 200px;
 }
+
 /* ! second_page END */
 
 /*  재생,멈춤 버튼 */
@@ -235,15 +224,10 @@ body{
 
 #full_page .third_page .yeezy{
     position: absolute;
-    top: 200px;
-    left: 150px;
+    top: 170px;
+    left: 80px;
 }
 
-#full_page .third_page .boost{
-    position: absolute;
-    top: 330px;
-    left: 150px;
-}
 #full_page .third_page .wrap {
     position: relative;
     width: 700px;
@@ -267,10 +251,10 @@ body{
 #full_page .third_page .slider_nav{
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 40px;
     transform: translateY(-50%);
-    width: 380px;
-    font-size: 80px;
+    width: 280px;
+    font-size: 60px;
 }
 /* ! third_page END */
 
@@ -278,7 +262,7 @@ body{
     background: black;
 }
 
-#full_page .fourth_page .adidas_original{
+#full_page .fourth_page .adidas_logo {
     margin-bottom:300px ;
     margin-left:400px ;
     transform:
@@ -291,11 +275,11 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#full_page .fourth_page .gucci_mark{
+#full_page .fourth_page .gucci_logo{
     margin-bottom: 50px;
     margin-left: 600px;
     transform:
-    translateX(calc(var(--mouse-x) *-0.2px))
+    translateX(calc(var(--mouse-x) * -0.2px))
     translateY(calc(var(--mouse-y) * -0.5px));
 }
 
@@ -311,20 +295,6 @@ body{
     left: 114px; 
     width: 500px;
     height: 570px;  
-}
-
-#full_page .fifth_page .right_arrow{
-    position: absolute;
-    top: 45%;
-    right: 63%;
-    cursor: pointer;
-}
-
-#full_page .fifth_page .left_arrow{
-    position: absolute;
-    top: 45%;
-    left:2%;
-    cursor: pointer;
 }
 
 

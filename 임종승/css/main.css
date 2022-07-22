@@ -21,9 +21,7 @@ body{
     font-size: 30px;
 }
 
-.scroll_down i:first-child{
-    position: fixed;
-}
+
 
 .scroll_down .fa-solid{
     width:150px;
@@ -212,6 +210,11 @@ body{
 #full_page .third_page .yeezy{
     position: absolute;
     top: 170px;
+    left: 80px;
+}
+#full_page .third_page .boost{
+    position: absolute;
+    top: 200px;
     left: 80px;
 }
 

@@ -10,7 +10,7 @@ $(function(){
                 $("#header").addClass("on");
                 $("#header").removeClass("gucci");
             } else if(index == 4){
-                $("#header").addClass("gucci");
+
             }
         },
 
@@ -22,9 +22,18 @@ $(function(){
                 $("#header li:first-child").show();
                 $("#header li.gucci_color").hide();
             }else if(index ==3 && direction =="down"){
-                $("#header li.gucci_color").show();
-                $("#header li:first-child").hide();
+                $("#header").addClass("gucci");
+                $("#header .gnb > li:first-child").hide();
+                $("#header .gnb > li.gucci_color").show();
             }
         }
     });
+});
+
+//  로고 움직임
+let docStyle = document.documentElement.style;
+
+document.addEventListener('mousemove', function(e) {
+  docStyle.setProperty('--mouse-x', e.clientX);
+  docStyle.setProperty('--mouse-y', e.clientY);
 });

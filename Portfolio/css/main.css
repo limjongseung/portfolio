@@ -21,14 +21,25 @@ body{
     font-size: 30px;
 }
 
-.scroll_down i:first-child{
-    position: fixed;
-}
-
-.scroll_down .fa-solid{
+.scroll_down .fa-arrow-down{
     width:150px;
     text-align: center;
+    animation:arrow 1.5s infinite ease-in-out;
 }
+
+@keyframes arrow{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform:translateY(20px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/*  scroll_down color */
 .scroll_down.dark{
     color:black;
 }
@@ -75,7 +86,7 @@ body{
     line-height: 64px;
     cursor: pointer;
     position: relative;
-    transition: all 0.5s;
+    transition: transform 0.5s;
 }
 
 #header nav .gnb > li:last-child{
@@ -195,10 +206,15 @@ body{
 
 #full_page .third_page .yeezy{
     position: absolute;
-    top: 170px;
-    left: 80px;
+    top: 200px;
+    left: 150px;
 }
 
+#full_page .third_page .boost{
+    position: absolute;
+    top: 330px;
+    left: 150px;
+}
 #full_page .third_page .wrap {
     position: relative;
     width: 700px;
@@ -222,10 +238,10 @@ body{
 #full_page .third_page .slider_nav{
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 5%;
     transform: translateY(-50%);
-    width: 280px;
-    font-size: 60px;
+    width: 380px;
+    font-size: 80px;
 }
 /* ! third_page END */
 
@@ -233,11 +249,27 @@ body{
     background: black;
 }
 
-#full_page .fourth_page .gucci_adidas{
+#full_page .fourth_page .adidas_original{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    transform:
+    translateX(calc(var(--mouse-x) * 0.1px))
+    translateY(calc(var(--mouse-y) * 0.1px));
+}
+#full_page .fourth_page .x_mark{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+#full_page .fourth_page .gucci_mark{
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    transform:
+    translateX(calc(var(--mouse-x) *-0.1px))
+    translateY(calc(var(--mouse-y) * -0.1px));
 }
 
 /* ! fourth_page END */
@@ -252,6 +284,20 @@ body{
     left: 114px; 
     width: 500px;
     height: 570px;  
+}
+
+#full_page .fifth_page .right_arrow{
+    position: absolute;
+    top: 45%;
+    right: 63%;
+    cursor: pointer;
+}
+
+#full_page .fifth_page .left_arrow{
+    position: absolute;
+    top: 45%;
+    left:2%;
+    cursor: pointer;
 }
 
 

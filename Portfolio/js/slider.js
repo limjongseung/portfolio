@@ -53,9 +53,8 @@ $(".gucci_slider").slick({
     speed: 1000,
     slidesToShow:1,              
     slidesToScroll:1,         
-    fade:true,
-    prevArrow : $(".right_arrow"),
-    nextArrow: $(".left_arrow")
+    prevArrow : $(".left_arrow"),
+    nextArrow: $(".right_arrow")
 })
 
 

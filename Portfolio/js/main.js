@@ -12,8 +12,7 @@ $(function(){
                 $("#full_page .second_page .copy .m_logo").show(1000);
             } else if (index == 3){
                 $("#header").addClass("on");
-                $("#header").removeClass("gucci");
-            } else if(index == 4){
+            } else if(index == 6){
 
             }
         },
@@ -29,6 +28,16 @@ $(function(){
                 $("#header").addClass("gucci");
                 $("#header .gnb > li:first-child").hide();
                 $("#header .gnb > li.gucci_color").show();
+            }else if(index ==5 && direction =="down"){
+                $("#header").removeClass("gucci");
+                $("#header").addClass("white");
+                $("#header li.gucci_color").hide();
+                $("#header li.white_logo").show();
+            }else if(index == 6 && direction =="up"){
+                $("#header").removeClass("white");
+                $("#header").addClass("gucci");
+                $("#header li.gucci_color").show();
+                $("#header li.white_logo").hide();
             }
         }
     });

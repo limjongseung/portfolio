@@ -50,23 +50,21 @@ $(".gucci_slider").slick({
     autoplay:true,
     pauseOnHover:true,
     autoplaySpeed:3000,
-    speed: 1000,
+    speed: 2000,
     slidesToShow:1,              
     slidesToScroll:1,         
     prevArrow : $(".left_arrow"),
-    nextArrow: $(".right_arrow")
+    nextArrow: $(".right_arrow"),
+    asNavFor:".gucci_slider_nav"
+});
+
+$(".gucci_slider_nav").slick({
+    slidesToShow:1,
+    slidesToScroll:1,
+    asNavFor:".gucci_slider",
+    fade:true,
+    arrows:false
 })
-
-
-
-
-
-
-
-
-
-
-
 
 
 

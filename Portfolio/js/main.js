@@ -20,6 +20,13 @@ $(function(){
         'onLeave' : function (index, nextIndex, direction){
             if (index == 3 && direction == 'up'){
                 $("#header").removeClass("on");
+            } else if(index== 2 && direction == "down"){
+                $("#header").addClass("on");
+                $("#header").removeClass("white");
+                $("#header").removeClass("gucci");
+                $("#header li.white_logo").hide();
+                $("#header li.gucci_color").hide();
+                $("#header nav .gnb > li:first-child").show();
             } else if(index ==4 && direction =='up'){
                 $("#header").removeClass("gucci");
                 $("#header li:first-child").show();
@@ -41,9 +48,10 @@ $(function(){
             }
         }
     });
-    $(".move_first").on("click",function({
-        
-    }))
+
+    $(".move_first a").on("click",function(){
+        $("#header").removeClass("on");
+    });
 });
 
 //  로고 움직임

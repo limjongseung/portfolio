@@ -41,6 +41,9 @@ $(function(){
             }
         }
     });
+    $(".move_first").on("click",function({
+        
+    }))
 });
 
 //  로고 움직임

@@ -21,7 +21,7 @@ body{
     border-radius: 80px;
     cursor: pointer;
 }
-.move_first:hover a .fa-arrow-up-long{
+.move_first .fa-arrow-up-long{
     animation: arrow_up 1.5s infinite;
 }
 
@@ -164,13 +164,17 @@ body{
     left: 50%;
     top: 250px;
     transform: translateX(-50%);
+    opacity: 0;
     animation: opacity 3s;
-    animation-delay:1s ;
+    animation-delay:1.5s ;
+    animation-fill-mode: forwards;
 }
 
 #full_page .first_page .adidas_biglogo img{
+    opacity: 0;
     animation: opacity 3s;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes opacity {
@@ -353,10 +357,10 @@ body{
 }
 
 #full_page .fifth_page .right_arrow:hover{
-    opacity: 100;
+    opacity: 1;
 }
 #full_page .fifth_page .left_arrow:hover{
-    opacity: 100;
+    opacity: 1;
 }
 
 #full_page .fifth_page .gucci_slider_nav{
@@ -391,11 +395,11 @@ body{
     font-size: 60px;
     border: 2px solid #D2C8AB;
     border-radius: 40px;
+    transition: all 0.5s;
 }
 #full_page .fifth_page .gucci_slider_nav ul > li:hover:last-child{
     color: white;
     border-color: white;
-    transition: all 0.5s;
 }
 
 /* ! fifth_page END */

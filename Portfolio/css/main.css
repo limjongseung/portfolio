@@ -165,10 +165,12 @@ body{
     top: 250px;
     transform: translateX(-50%);
     animation: opacity 3s;
+    animation-delay:1s ;
 }
 
 #full_page .first_page .adidas_biglogo img{
     animation: opacity 3s;
+    animation-delay: 1s;
 }
 
 @keyframes opacity {
@@ -511,6 +513,10 @@ body{
 #full_page #footer address>p:nth-child(2)::after,
 #full_page #footer address>p:nth-child(6)::after{
     content: "";
+}
+
+#full_page #footer address>p span{
+    letter-spacing: 1px;
 }
 
 

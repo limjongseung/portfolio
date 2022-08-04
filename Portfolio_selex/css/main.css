@@ -1,48 +1,125 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 ol,ul,dl{list-style: none;}
 a{text-decoration: none; color: inherit;}
+body{font-family: 'Open Sans'; width: 100vw;}
+/* ^ font */
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Noto+Sans+KR:wght@400;700&family=Open+Sans:wght@500;600;700&display=swap');
 
+/* 
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.font_k{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.font_point{
+    font-family: 'Hammersmith One', sans-serif;
+}
 
-.bg{
+#first{
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-
 video{
     width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
-#header .big_logo{
+#header {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    width: 100vw;
+    z-index: 99;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+#header .header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20pxz;
+}
+#header .header_wrap nav{
+    width: 700px;
+}
+#header .header_wrap nav .gnb{
+    display: flex;
+    justify-content: space-between;
+}
+#header .header_wrap .hamburger{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin-right: 100px;
+}
+#header .header_wrap .hamburger span{
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 3px;
+}
+#header .header_wrap .hamburger span:first-child{
+    top: 0;
+}
+#header .header_wrap .hamburger span:last-child{
+    top: 100%;
+    width: 80%;
+}
+/* ! header END */
+
+#first .logo_wrap{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#header .big_logo img{
-    width: 600px;
-    height: 400px;
+#first .logo{
+    border: 4px solid white;
+    border-radius: 50%;
+    animation: spin;
+    animation: spinCircle;
 }
-#header .header_wrap{   
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#first .logo img{
+    margin: 90px 40px;
 }
 
-#header nav{}
-#header nav .gnb{
-    width:800px;
+#footer {
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 40px;
-    color: white;
-    margin-right: 400px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+#footer  .copy{
+    margin-left: 100px;
     
+}
+#footer .link{
+    margin-right: 100px;
+}
+#footer .link ul{
+    text-transform: uppercase;
+}
+#footer  .link ul{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+#footer .link ul>li a .fa-bag-shopping {
+    margin-right: 7px;
 }
 
 

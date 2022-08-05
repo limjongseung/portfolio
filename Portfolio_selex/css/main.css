@@ -41,6 +41,9 @@ video{
     background: white;
     color: black;
 }
+#header .header_wrap h1{
+    z-index: 10;
+}
 #header:hover .header_wrap .hamburger span{
     background: black;
 }
@@ -50,10 +53,6 @@ video{
     align-items: center;
     padding: 20px 30px;
     transition: all 0.5s;
-}
-#header .header_wrap .logo_black{
-    display: none;
-    z-index: 100;
 }
 #header .header_wrap nav{
     width: 700px;
@@ -156,8 +155,8 @@ video{
     height:100vh;
     background:#fff;
     position:fixed;
-    left:0;  
-    /* left:100vw; */
+    /* left:0;   */
+    left:100vw;
     top:0;
     transition:left 0.5s;
     z-index: 8;

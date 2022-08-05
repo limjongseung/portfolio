@@ -51,6 +51,10 @@ video{
     padding: 20px 30px;
     transition: all 0.75s;
 }
+#header .header_wrap .logo_black{
+    display: none;
+    z-index: 100;
+}
 #header .header_wrap nav{
     width: 700px;
 }
@@ -58,20 +62,43 @@ video{
     display: flex;
     justify-content: space-between;
 }
-#header .header_wrap nav .gnb>li .fa-angle-down{
-    padding-left: 9px;
+#header .header_wrap nav .gnb>li:nth-child(2):hover .fa-angle-down{
+    transform:rotate(180deg);
 }
+#header .header_wrap nav .gnb>li .fa-angle-down{
+    padding: 0px 5px;
+    transition: all 0.75s;
+}
+
 #header .header_wrap nav .gnb>li:nth-child(2){
     position: relative;
 }
-#header .header_wrap nav .gnb .sub{
+#header .header_wrap nav .gnb>li .sub{
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 0;
     transform: translateX(-30%);
     width: 150px;
+    height: 0;
+    overflow: hidden;
     font-size: 20px;
     text-align: center;
+    transition: all 0.75s;
+    background: white;
+}
+
+#header .header_wrap nav .gnb>li:nth-child(1):hover a,
+#header .header_wrap nav .gnb>li:nth-child(2):hover >a,
+#header .header_wrap nav .gnb>li:nth-child(3):hover a,
+#header .header_wrap nav .gnb>li:nth-child(4):hover a
+{
+    color: green;
+}
+#header .header_wrap nav .gnb>li:nth-child(2):hover .sub{
+    height: 115px;
+}
+#header .header_wrap nav .gnb .sub>li{
+    margin-bottom: 5px;
 }
 #header .header_wrap .hamburger{
     position: relative;

@@ -5,28 +5,28 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>selex</title>
+		<link rel="stylesheet" href="css/main.css" />
 		<script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script  src="https://kit.fontawesome.com/3a502c66dc.js"crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/main.css" />
-		<script src="js/main.js"></script>
+		<script defer src="js/main.js"></script>
 	</head>
 
 	<body>
 		<section id="first">
 			<header id="header">
 				<div class="header_wrap">
-					<h1><a href="index.html"><img src="img/selex_white_s.png" alt="셀렉스 로고 흰색"/></a></h1>
-					<div class="logo_black"><a href="index.html"><img src="img/selex_black.png" alt="셀렉스 로고 검정색"></a></div>
+					<h1><a href="index.html"><img src="img/selex_white.png" alt="셀렉스 로고"/></a></h1>
 					<nav>
 						<ul class="gnb">
 							<li><a href="#">Brand</a></li>
 							<li>
 								<a href="#">Value<i class="fa-solid fa-angle-down"></i></a>
 								 <ul class="sub font_k">
-									<li><a href="#">상생</a></li>
-									<li><a href="#">동반</a></li>
-									<li><a href="#">건강</a></li>
-									<li><a href="#">지속가능성</a></li>
+									<div class="vertical_underline"></div>
+										<li><a href="#">상생</a></li>
+										<li><a href="#">동반</a></li>
+										<li><a href="#">건강</a></li>
+										<li><a href="#">지속가능성</a></li>
 								 </ul>
 							</li>
 							<li><a href="#">Product</a></li>
@@ -38,10 +38,29 @@
 						<span> </span>
 					</div>
 				</div>
+
+				<section class="mega_menu">
+					<a href="index.html"><img src="img/selex_black.png" alt="셀렉스 검정색 로고"></a>
+					<div class="gray_line"></div>
+					<nav class="mega_gnb">
+						<ul>
+							<li><a href="#">Brand</a></li>
+							<li><a href="#">Value</a></li>
+							<li><a href="#">Product</a></li>
+							<li><a href="#">Shop</a></li>
+						</ul>
+					</nav>
+		
+
+
+				</section><!--mega_menu End-->
+
 			</header>
+
+
 			<!-- ! #heder END -->
 			<div class="bg">
-				<video src="video/selex_background_video.mp4"autoplay loop muted></video>
+				<video src="video/selex_background_video.mp4" autoplay loop muted></video>
 			</div>
 			<div class="logo_wrap">
 				<div class="logo">
@@ -49,12 +68,9 @@
 				</div>
 			</div>
 			<div class="ellipse">
-				<img src="img/ellipse.png" alt=흰색선의 원">
+				<img src="img/ellipse.png" alt="흰색선의 원">
 			</div>
-			<div class="greendot">
-				<img src="img/greendot.png" alt="초록색점">
-			</div>
-			<footer id="footer" class="">
+			<footer id="footer">
 				<div class="copy">
 					Copyright&copy; 2016 by Maeil Dairies Co.Ltd All rights
 					reserved.

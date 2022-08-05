@@ -49,7 +49,7 @@ video{
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    transition: all 0.75s;
+    transition: all 0.5s;
 }
 #header .header_wrap .logo_black{
     display: none;
@@ -67,7 +67,7 @@ video{
 }
 #header .header_wrap nav .gnb>li .fa-angle-down{
     padding: 0px 5px;
-    transition: all 0.75s;
+    transition: all 0.5s;
 }
 
 #header .header_wrap nav .gnb>li:nth-child(2){
@@ -75,15 +75,17 @@ video{
 }
 #header .header_wrap nav .gnb>li .sub{
     position: absolute;
-    top: 30px;
-    left: 0;
-    transform: translateX(-30%);
+    top: 34px;
+    left: 50%;
+    transform: translateX(-55%);
     width: 150px;
     height: 0;
     overflow: hidden;
-    font-size: 20px;
     text-align: center;
-    transition: all 0.75s;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s;
+    /*0.5 ~ 0.35*/
     background: white;
 }
 
@@ -94,17 +96,30 @@ video{
 {
     color: green;
 }
+
 #header .header_wrap nav .gnb>li:nth-child(2):hover .sub{
-    height: 115px;
+    height: 160px;
+}
+#header .header_wrap nav .gnb .sub .vertical_underline{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    border-radius: 3px;
+    transition: 0.5s;
+    background: green;
 }
 #header .header_wrap nav .gnb .sub>li{
-    margin-bottom: 5px;
+    margin: 12px 0px;
 }
 #header .header_wrap .hamburger{
     position: relative;
     display: inline-block;
     width: 50px;
     height: 20px;
+    cursor:pointer;
+    z-index: 10;
 }
 #header .header_wrap .hamburger span{
     position: absolute;
@@ -114,7 +129,7 @@ video{
     height: 2px;
     background: white;
     border-radius: 3px;
-    transition: all 0.75s;
+    transition: all 0.5s;
 }
 #header .header_wrap .hamburger span:first-child{
     top: 0;
@@ -123,6 +138,51 @@ video{
     top: 100%;
     width: 80%;
 }
+#header .header_wrap .hamburger:hover span{
+    background: green;
+}
+#header .header_wrap .hamburger span:first-child.on{
+    transform: rotate(45deg) translate(25%);
+}
+#header .header_wrap .hamburger span:last-child.on{
+    transform: rotate(-45deg)translate(25%);
+    width: 100%;
+}
+
+
+
+.mega_menu{
+    width:100%;
+    height:100vh;
+    background:#fff;
+    position:fixed;
+    left:0;  
+    /* left:100vw; */
+    top:0;
+    transition:left 0.5s;
+    z-index: 8;
+    color: black;
+
+}
+.mega_menu .mega_gnb ul{
+    height: 700px;  
+}
+.mega_menu .mega_gnb ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.mega_menu.active{
+    left:0;
+}
+
+
+
+
+
+
 /* ! header END */
 
 #first .logo_wrap{
@@ -137,16 +197,9 @@ video{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-#first .greendot{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+#first .ellipse img{
+    animation: spin 4s infinite linear;
 }
-#first .greendot img{
-    animation: spin 4s infinite ease-in-out;
-}
-
 @keyframes spin{
     0%{
         transform: rotate(0deg);
@@ -156,6 +209,7 @@ video{
     }
 
 }
+/* ! logo END */
 
 
 #footer {
@@ -189,7 +243,7 @@ video{
     margin-right: 7px;
 }
 #footer .link ul>li{
-    transition: all 0.75s;
+    transition: all 0.3s;
 }
 #footer .link ul>li:first-child:hover,
 #footer .link ul>li:last-child:hover{

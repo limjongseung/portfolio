@@ -163,7 +163,14 @@ video{
     height: 2px;
     background: #dfdfdf;
 }
-.mega_menu .mega_gnb #vertical_underline{
+.mega_menu .selex_protein {
+    margin: 40px;
+}
+.mega_menu .selex_protein img{
+    animation: spin 9s infinite linear;
+}
+
+ #vertical_underline{
     position: absolute;
     height: 4px;
     width: 0px;
@@ -171,7 +178,15 @@ video{
     transition: 0.5s;
     background: green;
     z-index: 10;
-    transform: translate(140px,200px);
+}
+ #vertical_underline_1{
+    position: absolute;
+    height: 4px;
+    width: 0px;
+    border-radius: 3px;
+    transition: 0.5s;
+    background: green;
+    z-index: 10;
 }
 .mega_menu .mega_gnb ul {
     position: absolute;
@@ -202,19 +217,37 @@ video{
 }
 .mega_menu .mega_sub{
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 32%;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+.mega_menu .mega_sub ul>li a{
+    transition: all 0.5s;
+}
+.mega_menu .mega_sub ul>li a:hover{
+    color:rgba(0, 0, 0, 1);
 }
 .mega_menu .mega_sub ul{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 300px;
-    margin-top: 100px;
+}
+.mega_menu main{
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+.mega_menu main .img_box img{
+    transition: all 0.5s;
 }
 
 .mega_menu #footer {
     color: rgba(0, 0, 0, 0.5);
+}
+.mega_menu #footer .copy {
+    color: rgba(0, 0, 0, 1);
 }
 .mega_menu #footer .link ul>li a{
     transition: all 0.5s;

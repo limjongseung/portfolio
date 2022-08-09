@@ -12,17 +12,22 @@ $(function(){
 
     $(".mega_gnb ul>li:nth-child(2)").on({
         mouseenter : function(){
-            $("main .img_box img").attr("src","img/cow.png").stop(true,true).hide().fadeIn();
+            $("main .img_box img").attr("src","img/cow.png")
         }
     });
     $(".mega_gnb ul>li:nth-child(3)").on({
         mouseenter : function(){
-            $("main .img_box img").attr("src","img/friendship.png").stop(true,true).hide().fadeIn();
+            $("main .img_box img").attr("src","img/friendship.png")
         }
     });
     $(".mega_gnb ul>li:nth-child(4)").on({
         mouseenter : function(){
-            $("main .img_box img").attr("src","img/wheat.png").stop(true,true).hide().fadeIn();
+            $("main .img_box img").attr("src","img/selex_product.png")
+        }
+    });
+    $(".mega_gnb ul>li:nth-child(5)").on({
+        mouseenter : function(){
+            $("main .img_box img").attr("src","img/wheat.png")
         }
     });
  

@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Selex</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/main.css" />
 		<script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script  src="https://kit.fontawesome.com/3a502c66dc.js"crossorigin="anonymous"></script>
 		<script defer src="js/main.js"></script>
@@ -41,7 +41,6 @@
 							<span> </span>
 						</div>
 					</div>
-					
 					<section class="mega_menu">
 						<a  class = "logo" href="index.html">
 							<img src="img/selex_black.png" alt="셀렉스 로고"/>
@@ -52,7 +51,7 @@
 						</div>
 						<nav class="mega_gnb">
 							<ul>
-								<div id="vertical_underline"></div>
+								<li id="vertical_underline"></>
 								<li><a href="#">Brand</a></li>
 								<li><a href="#">Value</a></li>
 								<li><a href="#">Product</a></li>
@@ -62,7 +61,7 @@
 						<div class="gray_line_v"></div>
 						<nav class="mega_sub font_k">
 							<ul>
-								<div id="vertical_underline_1"></div>
+								<li id="vertical_underline_1"></ㅑ>
 								<li><a href="#">상생</a></li>
 								<li><a href="#">동반</a></li>
 								<li><a href="#">건강</a></li>
@@ -72,9 +71,12 @@
 						<main> 
 							<div class="img_box">
 								<img src="img/cow.png" alt="들판의 소 이미지">
+								<img src="img/friendship.png" alt="들판의 소 이미지">
+								<img src="img/selex_product.png" alt="들판의 소 이미지">
+								<img src="img/wheat.png" alt="들판의 소 이미지">
 							</div>
 						</main>
-						<footer id="footer">
+						<footer id="mega_footer">
 							<div class="copy">
 								Copyright&copy; 2016 by Maeil Dairies Co.Ltd All rights
 								reserved.
@@ -91,9 +93,6 @@
 							</div>
 					
 						</footer>
-
-		
-
 
 				</section><!--mega_menu End-->
 
@@ -132,3 +131,18 @@
 
 	</body>
 </html>
+
+
+
+<!-- !
+	웹표준에 어긋나는 것
+1. 밑줄 div -> li
+2. footer id 같으면 안됨
+수정사항
+1. 이미지파일에 그림자 효과 삭제하고 코드로 주기
+2. 구동모션
+3. 메가 네비 이미지가 너무 작음 크게 만들고 나중에 overflow hidden으로 없애기
+4. 첫 로고에서 점과 선이 연결되지 않도록 만들기
+5. 서브페이지 스크롤 안되게 만들기
+6. css는 main sub common으로 만들고 공통되는 속성은 common으로 sub에서는 id를 넣어서 구분하면 된다.
+-->

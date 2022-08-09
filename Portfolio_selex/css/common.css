@@ -1,10 +1,14 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 ol,ul,dl{list-style: none;}
 a{text-decoration: none; color: inherit;}
-body{font-family: 'Open Sans'; width: 100vw;}
+body{font-family: 'Open Sans';}
 /* ^ font */
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Noto+Sans+KR:wght@400;700&family=Open+Sans:wght@500;600;700&display=swap');
 
+body.mega{
+    height:100vh;
+    overflow:hidden;
+}
 /* 
 font-family: 'Hammersmith One', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;
@@ -19,33 +23,19 @@ font-family: 'Open Sans', sans-serif;
 .black{
     color: black;
 }
-
-#first{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-video{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+.flex{
+    display: flex;
+    justify-content: space-between;
 }
 
 #header {
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    min-width:1000px;
     z-index: 99;
     font-size: 25px;
     font-weight: 500;
-    color: white;
-}
-#header:hover .header_wrap{
-    background: white;
     color: black;
-}
-#header:hover .header_wrap .hamburger span{
-    background: black;
 }
 #header .header_wrap {
     display: flex;
@@ -117,7 +107,7 @@ video{
     display: inline-block;
     width: 100%;
     height: 2px;
-    background: white;
+    background: black;
     border-radius: 3px;
     transition: all 0.3s;
 }
@@ -145,7 +135,7 @@ video{
 }
 .mega_menu{
     width:100%;
-    height:100vh;
+    height: 100%;
     background:#fff;
     position:fixed;
     /* left:0;   */
@@ -168,6 +158,15 @@ video{
 }
 .mega_menu .selex_protein img{
     animation: spin 9s infinite linear;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(-360deg);
+    }
+
 }
 
  #vertical_underline{
@@ -239,75 +238,75 @@ video{
     top: 15%;
     right: 0;
 }
+.mega_menu main .img_box{
+    width:730px;
+    height:600px;
+    position: relative;
+}
 .mega_menu main .img_box img{
+    position: absolute;
+    left:100px;
+    top:0;
+    opacity: 0;
     transition: all 0.5s;
 }
-/* ! transition 안된 */
-
-.mega_menu #footer {
-    color: rgba(0, 0, 0, 0.5);
-}
-.mega_menu #footer .copy {
-    color: rgba(0, 0, 0, 1);
-}
-.mega_menu #footer .link ul>li a{
-    transition: all 0.5s;
-}
-.mega_menu #footer .link ul>li:hover a{
-    color: rgba(0, 0, 0, 1);
-}
-
-.mega_menu.active{
+.mega_menu main .img_box img.on{
+    opacity: 1;
     left:0;
 }
-
-
-
-
-
-
-/* ! header END */
-
-#first .logo_wrap{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-#first .ellipse{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-#first .ellipse img{
-    animation: spin 4s infinite linear;
-}
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform:rotate(-360deg);
-    }
-
-}
-/* ! logo END */
-
-
-#footer {
+.mega_menu #mega_footer {
     position: fixed;
     bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: #AEAFA1;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+.mega_menu #mega_footer .copy {
+    margin-left: 30px;
+    transition: all 0.5s;
+    color: rgba(0, 0, 0, 1);
+}
+.mega_menu #mega_footer .link{
+    margin-right: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.mega_menu #mega_footer .link ul{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+.mega_menu #mega_footer .link ul>li a .fa-bag-shopping ,
+.mega_menu #mega_footer .link ul>li a .fa-instagram{
+    margin-right: 7px;
+}
+.mega_menu #mega_footer .link ul>li a{
+    transition: all 0.5s;
+}
+.mega_menu #mega_footer .link ul>li:hover a{
+    color: rgba(0, 0, 0, 1);
+}
+.mega_menu.active{
+    left:0;
+}
+
+/* !mega_menu END */
+
+#footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+    background: #dfdfdf;
     font-size: 12px;
 }
 #footer  .copy{
     margin-left: 30px;
     transition: all 0.5s;
-    
 }
 #footer .link{
     margin-right: 30px;
@@ -330,9 +329,6 @@ video{
 }
 #footer .link ul>li:first-child:hover ,
 #footer .link ul>li:last-child:hover {
-    color: white;
+    color: black;
 }
 /* ! footer END */
-
-
-

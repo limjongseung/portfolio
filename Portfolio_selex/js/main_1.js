@@ -1,26 +1,22 @@
 
 $(function(){
-    $(".mega_gnb ul>li:nth-child(2)").on({
-        mouseenter : function(){
-            $("main .img_box img").attr("src","img/cow.png")
-        }
+    $(".mega_gnb ul>li:nth-child(2)").mouseenter(function(){
+        $(".mega_menu main .img_box img").removeClass("on");
+        $(".mega_menu main .img_box img:nth-of-type(1)").addClass("on");
     });
-    $(".mega_gnb ul>li:nth-child(3)").on({
-        mouseenter : function(){
-            $("main .img_box img").attr("src","img/friendship.png")
-        }
+    $(".mega_gnb ul>li:nth-child(3)").mouseenter(function(){
+        $(".mega_menu main .img_box img").removeClass("on");
+        $(".mega_menu main .img_box img:nth-of-type(2)").addClass("on");
     });
-    $(".mega_gnb ul>li:nth-child(4)").on({
-        mouseenter : function(){
-            $("main .img_box img").attr("src","img/selex_product.png")
-        }
+    $(".mega_gnb ul>li:nth-child(4)").mouseenter(function(){
+        $(".mega_menu main .img_box img").removeClass("on");
+        $(".mega_menu main .img_box img:nth-of-type(3)").addClass("on");
     });
-    $(".mega_gnb ul>li:nth-child(5)").on({
-        mouseenter : function(){
-            $("main .img_box img").attr("src","img/wheat.png")
-        }
+    $(".mega_gnb ul>li:nth-child(5)").mouseenter(function(){
+        $(".mega_menu main .img_box img").removeClass("on");
+        $(".mega_menu main .img_box img:nth-of-type(4)").addClass("on");
     });
- 
+    
     $("#header .header_wrap .hamburger").click(function(){
         $("#header .header_wrap .hamburger>span").toggleClass("on");
         $(".mega_menu").toggleClass("active");

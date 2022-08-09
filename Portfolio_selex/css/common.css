@@ -235,12 +235,15 @@ font-family: 'Open Sans', sans-serif;
 }
 .mega_menu main{
     position: absolute;
+    width: 46%;
+    min-width: 600px;
+    overflow: hidden;
     top: 15%;
     right: 0;
 }
 .mega_menu main .img_box{
-    width:730px;
-    height:600px;
+    width: 900px;
+    height:700px;
     position: relative;
 }
 .mega_menu main .img_box img{

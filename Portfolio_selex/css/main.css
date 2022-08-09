@@ -236,14 +236,17 @@ video{
     height: 300px;
 }
 .mega_menu main{
-    position: absolute;
+    position: absolute; 
+    width: 46%;
+    min-width: 600px;
+    overflow: hidden;
     top: 15%;
     right: 0;
 }
 .mega_menu main .img_box{
-    width:730px;
-    height:600px;
     position: relative;
+    width: 900px;
+    height:700px;
 }
 .mega_menu main .img_box img{
     position: absolute;

@@ -20,6 +20,7 @@ $(function(){
     $("#header .header_wrap .hamburger").click(function(){
         $("#header .header_wrap .hamburger>span").toggleClass("on");
         $(".mega_menu").toggleClass("active");
+        $("body").toggleClass("mega");
         
     });
 });

@@ -5,6 +5,19 @@ body{font-family: 'Open Sans';}
 /* ^ font */
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Noto+Sans+KR:wght@400;700&family=Open+Sans:wght@500;600;700&display=swap');
 
+.scroll_box{
+    width:150px;
+    height:100px;
+    line-height:100px;
+    background:white;
+    border:5px solid #000;
+    text-align:center;
+    position:fixed;
+    left:0;
+    top:100px;
+    z-index: 9999;
+}
+
 body.mega{
     height:100vh;
     overflow:hidden;
@@ -58,7 +71,9 @@ font-family: 'Open Sans', sans-serif;
     padding: 0px 5px;
     transition: transform 0.3s;
 }
-
+#header .header_wrap nav .gnb>li:nth-child(2) a{
+    cursor: default;
+}
 #header .header_wrap nav .gnb>li:nth-child(2){
     position: relative;
 }
@@ -93,6 +108,13 @@ font-family: 'Open Sans', sans-serif;
 #header .header_wrap nav .gnb .sub>li{
     margin: 12px 0px;
 }
+#header .header_wrap nav .gnb .sub>li a{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#header .header_wrap nav .gnb .sub>li a:hover{
+    color: green;
+} 
 #header .header_wrap .hamburger{
     position: relative;
     display: inline-block;

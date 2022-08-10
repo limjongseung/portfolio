@@ -1,15 +1,16 @@
 
 $(function(){
-    
-    $("#header").on({
-        mouseenter : function(){
-            $("h1 img").attr("src","img/selex_black.png");
-        },
-        mouseleave : function(){
-            $("h1 img").attr("src","img/selex_white.png");
-        }
-    });
 
+    if ($("#header").hasClass("main_header")){
+        $("#header").on({
+            mouseenter: function () {
+                $("h1 img").attr("src", "img/selex_black.png");
+            },
+            mouseleave: function () {
+                $("h1 img").attr("src", "img/selex_white.png");
+            }
+        });
+    };
 
     $(".mega_gnb ul>li:nth-child(2)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
@@ -32,7 +33,13 @@ $(function(){
     $("#header .header_wrap .hamburger").click(function(){
         $("#header .header_wrap .hamburger>span").toggleClass("on");
         $(".mega_menu").toggleClass("active");
-        
+    });
+    $(document).on("scroll", function(){
+        let scrollTop = $(document).scrollTop();
+        $(".scroll_box").text(scrollTop);
+        if ( scrollTop > 750) {
+            $("#sub_1 .content_2 .content_wrap").addClass("on");
+        }
     });
 });
 

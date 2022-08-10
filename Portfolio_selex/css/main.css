@@ -69,7 +69,9 @@ video{
     padding: 0px 5px;
     transition: transform 0.3s;
 }
-
+#header .header_wrap nav .gnb>li:nth-child(2) a{
+    cursor: default;
+}
 #header .header_wrap nav .gnb>li:nth-child(2){
     position: relative;
 }
@@ -103,6 +105,13 @@ video{
 
 #header .header_wrap nav .gnb .sub>li{
     margin: 12px 0px;
+}
+#header .header_wrap nav .gnb .sub>li a{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#header .header_wrap nav .gnb .sub>li a:hover{
+    color: green;
 }
 #header .header_wrap .hamburger{
     position: relative;
@@ -203,7 +212,10 @@ video{
     justify-content: space-around;
 }
 .mega_menu .mega_gnb ul>li a:hover{
-    color:rgba(0, 0, 0, 1);
+    color:rgba(0, 0, 0, 1); 
+}
+.mega_menu .mega_gnb ul>li:nth-of-type(3) a{
+    cursor: default;
 }
 .mega_menu .mega_gnb ul>li a{
     transition: all 0.5s;

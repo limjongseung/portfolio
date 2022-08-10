@@ -332,7 +332,7 @@ video{
     transform: translate(-50%,-50%);
 }
 #first .ellipse img{
-    animation: spin 4s infinite linear;
+    animation: spin 9s infinite linear;
 }
 @keyframes spin{
     0%{

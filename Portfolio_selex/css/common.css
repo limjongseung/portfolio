@@ -30,6 +30,9 @@ font-family: 'Open Sans', sans-serif;
 .font_k{
     font-family: 'Noto Sans KR', sans-serif;
 }
+.font_e{
+    font-family: 'Open Sans', sans-serif;
+}
 .font_point{
     font-family: 'Hammersmith One', sans-serif;
 }
@@ -39,6 +42,9 @@ font-family: 'Open Sans', sans-serif;
 .flex{
     display: flex;
     justify-content: space-between;
+}
+.semi_bold{
+    font-weight: 600;
 }
 
 #header {
@@ -332,6 +338,7 @@ font-family: 'Open Sans', sans-serif;
 #footer  .copy{
     margin-left: 30px;
     transition: all 0.5s;
+    text-transform: capitalize;
 }
 #footer .link{
     margin-right: 30px;

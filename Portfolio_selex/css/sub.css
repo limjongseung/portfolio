@@ -543,9 +543,12 @@ span.module_span{
     font-size: 20px;
 }
 /* ! #sub_5 END */
+#header.product{
+    border-bottom: 1px solid #dfdfdf;
+}
 
 #sub_6{
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     transform: translateY(120px);
     background: url(../img/milk_background.png) no-repeat center center ;

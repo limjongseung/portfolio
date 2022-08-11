@@ -26,7 +26,29 @@
     right: 10%;
     font-size: 40px;
     color: white;
+    animation: appear 1s ease-out;
 }
+@keyframes disappear{
+    from{
+        opacity: 1;
+        right: 10%;
+    }
+    to{
+        opacity: 0;
+        right: 0%;
+    }
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        right: 0%;
+    }
+    to{
+        opacity: 1;
+        right: 10%;
+    }
+}
+
 #sub_1 .content_1 .content_wrap .text_wrap p{
     font-size: 20px;
     color: rgba(255, 255,255, 0.7);
@@ -135,6 +157,7 @@ span.module_span{
     font-size: 20px;
     font-weight: 500;
 }
+
 
 /* ! -------------------------  #sub_1  END */
 
@@ -304,6 +327,10 @@ span.module_span{
     text-align: center;
     margin-bottom: 30px;    
 }
+#sub_3 .con_3 .con_wrap .txt_2 h4,
+#sub_3 .con_3 .con_wrap .txt_4 h4{
+    margin-right: 200px;
+}
 #sub_3 .con_3 .con_wrap p {
     font-size: 30px;
 }
@@ -332,12 +359,12 @@ span.module_span{
 }
 #sub_3 .con_3 .txt_4{
     position: absolute;
-    top: 760px;
+    top: 736px;
     right: 18%;
 }
 #sub_3 .con_3 .txt_1 h4::after,
 #sub_3 .con_3 .txt_3 h4::after{
-    width: 270px;
+    width: 40%;
     display: inline-block;
     content: "";
     border: 2px dashed #535353;
@@ -345,7 +372,7 @@ span.module_span{
 }
 #sub_3 .con_3 .txt_2 h4::before,
 #sub_3 .con_3 .txt_4 h4::before{
-    width: 270px;
+    width: 20%;
     display: inline-block;
     content: "";
     border: 2px dashed #535353;
@@ -353,19 +380,7 @@ span.module_span{
 }
 
 #footer.shared{
-    position: absolute;
-    top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ! #sub_3 END */
 #sub_4{

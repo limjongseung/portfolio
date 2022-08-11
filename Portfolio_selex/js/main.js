@@ -42,8 +42,11 @@ $(function(){
     $(document).on("scroll", function(){
         let scrollTop = $(document).scrollTop();
         $(".scroll_box").text(scrollTop);
-        if ( scrollTop > 750) {
-            $("#sub_1 .content_2 .content_wrap").addClass("on");
+        if ( scrollTop > 300) {
+            $("#sub_1 .content_1 .content_wrap .text_wrap").css("animation","disappear 1s ease-out forwards");
+            // $("#sub_1 .content_2 .content_wrap").addClass("on");
+        } else if( scrollTop <600){
+            $("#sub_1 .content_1 .content_wrap .text_wrap").css("animation","appear 1s ease-out forwards");
         }
     });
 });

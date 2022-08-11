@@ -286,6 +286,86 @@ span.module_span{
     font-size: 30px;
     opacity: .8;
 }
+#sub_3 .con_2 .text_wrap{
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+}
+#sub_3 .con_2 .text_wrap h3{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#sub_3 .con_2 .text_wrap p{
+    font-size: 30px;
+}
+#sub_3 .con_3 .con_wrap h4{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;    
+}
+#sub_3 .con_3 .con_wrap p {
+    font-size: 30px;
+}
+#sub_3 .con_3 .con_wrap{
+    position: relative;
+}
+#sub_3 .con_3 .con_wrap .img_wrap{
+    width: 30px;
+    height: 99px;
+    margin: 0 auto;
+}
+#sub_3 .con_3 .txt_1{
+    position: absolute;
+    top: -16px;
+    left: 18%;
+}
+#sub_3 .con_3 .txt_2{
+    position: absolute;
+    top: 240px;
+    right: 18%;
+}
+#sub_3 .con_3 .txt_3{
+    position: absolute;
+    top: 480px;
+    left: 18%;
+}
+#sub_3 .con_3 .txt_4{
+    position: absolute;
+    top: 760px;
+    right: 18%;
+}
+#sub_3 .con_3 .txt_1 h4::after,
+#sub_3 .con_3 .txt_3 h4::after{
+    width: 270px;
+    display: inline-block;
+    content: "";
+    border: 2px dashed #535353;
+    transform: translate(50px,-20px);
+}
+#sub_3 .con_3 .txt_2 h4::before,
+#sub_3 .con_3 .txt_4 h4::before{
+    width: 270px;
+    display: inline-block;
+    content: "";
+    border: 2px dashed #535353;
+    transform: translate(-50px,-20px);
+}
+
+#footer.shared{
+    position: absolute;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ! #sub_3 END */
 #sub_4{
@@ -543,19 +623,21 @@ span.module_span{
     font-size: 20px;
 }
 /* ! #sub_5 END */
+
 #header.product{
+    position: relative;
     border-bottom: 1px solid #dfdfdf;
 }
-
-#sub_6{
-    /* width: 100%; */
+html,body{
     height: 100%;
-    transform: translateY(120px);
+}
+#sub_6{
+    height: calc(100% - 175px);
     background: url(../img/milk_background.png) no-repeat center center ;
     background-size: cover;
 }
 #sub_6 .con_1{
-    transform: translateY(50px);
+    padding-top: 50px;
 }
 
 #sub_6 .con_1 .title_wrap{
@@ -588,7 +670,7 @@ span.module_span{
 #sub_6 .con_1 ul>li .con_left .txt_box p{
     color: #535353;
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 #sub_6 .con_1 ul>li .con_left .txt_box div{
     width: 200px;
@@ -612,7 +694,7 @@ span.module_span{
 #sub_6 .con_1 ul>li .con_right .txt_box p{
     color: #535353;
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 #sub_6 .con_1 ul>li .con_right .txt_box div{
     width: 200px;

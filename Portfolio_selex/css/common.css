@@ -251,6 +251,11 @@ font-family: 'Open Sans', sans-serif;
     left: 32%;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+.mega_menu .mega_sub.on{
+    opacity: 1;
 }
 .mega_menu .mega_sub ul>li a{
     transition: all 0.5s;

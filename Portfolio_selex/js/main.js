@@ -15,18 +15,23 @@ $(function(){
     $(".mega_gnb ul>li:nth-child(2)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
         $(".mega_menu main .img_box img:nth-of-type(1)").addClass("on");
+        $(".mega_menu .mega_sub").removeClass("on");
     });
     $(".mega_gnb ul>li:nth-child(3)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
         $(".mega_menu main .img_box img:nth-of-type(2)").addClass("on");
+        $(".mega_menu .mega_sub").addClass("on");
     });
     $(".mega_gnb ul>li:nth-child(4)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
         $(".mega_menu main .img_box img:nth-of-type(3)").addClass("on");
+        $(".mega_menu .mega_sub").removeClass("on");
+
     });
     $(".mega_gnb ul>li:nth-child(5)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
         $(".mega_menu main .img_box img:nth-of-type(4)").addClass("on");
+        $(".mega_menu .mega_sub").removeClass("on");
     });
 
 

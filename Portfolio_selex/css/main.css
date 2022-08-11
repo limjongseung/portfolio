@@ -234,6 +234,11 @@ video{
     left: 32%;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.mega_menu .mega_sub.on{
+    opacity: 1;
 }
 .mega_menu .mega_sub ul>li a{
     transition: all 0.5s;

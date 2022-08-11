@@ -231,6 +231,9 @@ font-family: 'Open Sans', sans-serif;
 .mega_menu .mega_gnb ul>li a:hover{
     color:rgba(0, 0, 0, 1);
 }
+.mega_menu .mega_gnb ul>li:nth-of-type(3) a{
+    cursor: default;
+}
 .mega_menu .mega_gnb ul>li a{
     transition: all 0.5s;
 }

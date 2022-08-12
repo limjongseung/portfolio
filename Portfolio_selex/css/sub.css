@@ -83,6 +83,42 @@
 }
 #sub_1 .content_2 .content_wrap .img_wrap img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100px);
+    opacity: 0;
+}
+#sub_1 .content_2 .content_wrap .img_wrap img.on{
+    animation: appear_con2 1s ease-out forwards;
+}
+
+@keyframes appear_left{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes disappear_con2{
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+@keyframes appear_right{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 #sub_1 .content_2 .content_wrap .text_wrap{
@@ -90,6 +126,8 @@
     width: 430px;
     margin-left: 30px;
     word-break: keep-all;
+    opacity: 0;
+    transform: translateX(100px);
 }
 #sub_1 .content_2 .content_wrap .text_wrap h3{
     font-size: 50px;
@@ -120,6 +158,8 @@ span.module_span{
     width: 430px;
     margin-top: 20px;
     word-break: keep-all;
+    transform:translateX(100px);
+    opacity: 0;
 }
 #sub_1 .content_3 .content_wrap .text_wrap h3{
     font-size: 40px;
@@ -130,6 +170,8 @@ span.module_span{
 }
 #sub_1 .content_3 .content_wrap .img_wrap img{
     box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
+    transform:translateX(-100px);
+    opacity: 0;
 }
 /* !content_3 END */
 
@@ -141,13 +183,17 @@ span.module_span{
     width: 100%;
     margin-bottom: 250px;
 }
-.content_4 .content_wrap .img_wrap img{
+#sub_1 .content_4 .content_wrap .img_wrap img{
     box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
+    transform:translateX(100px);
+    opacity: 0;
 }
 #sub_1 .content_4 .content_wrap .text_wrap{
     width: 430px;
     margin-top: 10px;
     word-break: keep-all;
+    transform:translateX(-100px);
+    opacity: 0;
 }
 #sub_1 .content_4 .content_wrap .text_wrap h3{
     font-size: 50px;
@@ -198,26 +244,58 @@ span.module_span{
     text-align: center;
     color: white;
 }
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes opacity_8{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .8;
+    }
+}
 #sub_2  .con_1 .con_wrap .text_wrap h2{
     font-size: 90px;
     font-weight: 600;
     margin-bottom: 80px;
+    opacity: 0;
+    animation: opacity 1s ease-out forwards;
 }
 #sub_2  .con_1 .con_wrap .text_wrap h4{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: opacity 1s ease-out forwards;
+    animation-delay: 1s;
 }
 #sub_2  .con_1 .con_wrap .text_wrap p{
     font-size: 30px;
-    opacity: .8;
+    opacity: 0;
+    animation: opacity_8 1s ease-out forwards;
+    animation-delay: 2s;
 }
 /* !con_1 END */
+.ani_right{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.ani_left{
+    opacity: 0;
+    transform: translateX(100px);
+}
 #sub_2 .sub_title{
-    width: 400px;
+    width: 550px;
     margin: 0 auto 170px;
     font-size: 40px;
     font-weight: bold;
+    opacity: 0;
 }
 
 #sub_2 .con_common{
@@ -226,6 +304,7 @@ span.module_span{
 }
 #sub_2 .con_common .con_wrap .img_wrap{
     position: relative;
+
 }
 #sub_2 .con_common .con_wrap .img_wrap img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
@@ -425,15 +504,22 @@ span.module_span{
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 80px;
+    opacity: 0;
+    animation: opacity 1s ease-out forwards;
 }
 #sub_4  .con_1 .con_wrap .text_wrap h4{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: opacity 1s ease-out forwards;
+    animation-delay: 1s;
 }
 #sub_4  .con_1 .con_wrap .text_wrap p{
     font-size: 30px;
-    opacity: .8;
+    opacity: 0;
+    animation: opacity_8 1s ease-out forwards;
+    animation-delay: 2s;
 }
 /* !con_1 END */
 
@@ -443,6 +529,7 @@ span.module_span{
     font-size: 50px;
     font-weight: 700;
     margin: 0 auto 70px;
+    opacity: 0;
 }
 #sub_4 .con_2{
     margin-bottom: 200px;   

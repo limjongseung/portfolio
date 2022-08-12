@@ -12,6 +12,7 @@ $(function(){
         });
     };
 
+    // mega menu 구동
     $(".mega_gnb ul>li:nth-child(2)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
         $(".mega_menu main .img_box img:nth-of-type(1)").addClass("on");
@@ -42,13 +43,64 @@ $(function(){
     $(document).on("scroll", function(){
         let scrollTop = $(document).scrollTop();
         $(".scroll_box").text(scrollTop);
-        if ( scrollTop > 300) {
+        if ( scrollTop >500) {
             $("#sub_1 .content_1 .content_wrap .text_wrap").css("animation","disappear 1s ease-out forwards");
             // $("#sub_1 .content_2 .content_wrap").addClass("on");
         } else if( scrollTop <600){
             $("#sub_1 .content_1 .content_wrap .text_wrap").css("animation","appear 1s ease-out forwards");
+        } 
+    });
+    // ^ Brand page 스크롤 이벤트
+    $(document).on("scroll", function(){
+        let scrollTop_1 = $(document).scrollTop();
+        if ( scrollTop_1 > 200 && scrollTop_1 < 500) {
+          $("#sub_1 .content_2 .content_wrap .img_wrap img").css("animation","appear_left 1s ease-out forwards");
+          $("#sub_1 .content_2 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        } else if (scrollTop_1 >500 && scrollTop_1<900){
+            $("#sub_1 .content_3 .content_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+            $("#sub_1 .content_3 .content_wrap .img_wrap img").css("animation","appear_right 1s ease-out forwards");
+        } else if (scrollTop_1 > 900){
+            $("#sub_1 .content_4 .content_wrap .img_wrap img").css("animation","appear_left 1s ease-out forwards");
+            $("#sub_1 .content_4 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
         }
     });
+    // ^ winwin page 스크롤 이벤트
+    $(document).on("scroll", function(){
+        let scrollTop_2 = $(document).scrollTop();
+        if(scrollTop_2 >100 && scrollTop_2 <200){
+            $("#sub_2 .sub_title").css("animation","opacity 1s ease-out forwards");
+        } else if(scrollTop_2 >300 && scrollTop_2 <400){
+            $("#sub_2 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+            $("#sub_2 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        } else if(scrollTop_2 >700 && scrollTop_2 <800){
+            $("#sub_2 .con_3 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+            $("#sub_2 .con_3 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        } else if(scrollTop_2 >1200 && scrollTop_2 <1300){
+            $("#sub_2 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+            $("#sub_2 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        }else if(scrollTop_2 >1700 && scrollTop_2 <1800){
+            $("#sub_2 .con_5 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+            $("#sub_2 .con_5 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        }
+    });
+        // ^ fitness스크롤 이벤트
+        $(document).on("scroll", function(){
+            let scrollTop_4 = $(document).scrollTop();
+            if(scrollTop_4 >100 && scrollTop_4 < 200){
+                $("#sub_4 .sub_title").css("animation","opacity 1s ease-out forwards");
+            }else if(scrollTop_4 >200 && scrollTop_4 <300){
+                $("#sub_4 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_4 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            } else if(scrollTop_4 >800 && scrollTop_4 <900){
+                $("#sub_4 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+                $("#sub_4 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+            } else if(scrollTop_4 >1300 && scrollTop_4 <1400){
+                $("#sub_4 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_4 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            }
+        });
+
+
 });
 
 let verticalBar = document.getElementById("vertical_underline");

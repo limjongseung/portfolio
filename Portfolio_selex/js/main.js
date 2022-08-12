@@ -100,11 +100,25 @@ $(function(){
             }
         });
         // sustainability 스크롤 이벤트
-        
-
-
+        $(document).on("scroll", function(){
+            let scrollTop_5 = $(document).scrollTop();
+            if(scrollTop_5 >100 && scrollTop_5 < 200){
+                $("#sub_5 .sub_title").css("animation","opacity 1s ease-out forwards");
+            }else if(scrollTop_5 >200 && scrollTop_5 <300){
+                $("#sub_5 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_5 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            } else if(scrollTop_5 >800 && scrollTop_5 <900){
+                $("#sub_5 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+                $("#sub_5 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+            } else if(scrollTop_5 >1300 && scrollTop_5 <1400){
+                $("#sub_5 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_5 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            }
+        });
 });
 
+
+// megamenu 밑줄표시 구동 js
 let verticalBar = document.getElementById("vertical_underline");
 let verticalMenus = document.querySelectorAll(".mega_menu .mega_gnb ul>li a");
 function verticalIndicator(e) {
@@ -116,8 +130,6 @@ function verticalIndicator(e) {
   verticalMenus.forEach((menu) =>
     menu.addEventListener("mouseover", (e) => verticalIndicator(e.currentTarget))
   );
-
-  
   let verticalBar1 = document.getElementById("vertical_underline_1");
 let verticalMenus1 = document.querySelectorAll(".mega_menu .mega_sub ul>li a");
 function verticalIndicator1(e) {

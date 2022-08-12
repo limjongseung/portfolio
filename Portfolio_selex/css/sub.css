@@ -633,15 +633,22 @@ span.module_span{
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 80px;
+    opacity: 0;
     animation: opacity 1s ease-out forwards;
 }
 #sub_5  .con_1 .con_wrap .text_wrap h4{
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: opacity 1s ease-out forwards;
+    animation-delay: 1s ;
 }
 #sub_5  .con_1 .con_wrap .text_wrap p{
     font-size: 30px;
+    opacity: 0;
+    animation: opacity 1s ease-out forwards;
+    animation-delay: 2s;
 }
 /* !con_1 END */
 
@@ -651,6 +658,7 @@ span.module_span{
     font-size: 50px;
     font-weight: 700;
     margin: 0 auto 70px;
+    opacity: 0;
 }
 #sub_5 .con_2{
     margin-bottom: 200px;   

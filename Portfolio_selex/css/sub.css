@@ -633,6 +633,7 @@ span.module_span{
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 80px;
+    animation: opacity 1s ease-out forwards;
 }
 #sub_5  .con_1 .con_wrap .text_wrap h4{
     font-size: 40px;

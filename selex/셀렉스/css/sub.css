@@ -418,26 +418,57 @@ span.module_span{
 #sub_3 .con_3 .con_wrap .img_wrap{
     text-align:center;
 }
+@keyframes  appear_left_sub_3{
+    from{
+        opacity: 0;
+        transform: translateX(-135%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-105%);
+    }
+}
+@keyframes appear_right_sub_3{
+    from{
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(10%);
+    }
+}
+.ani_left_sub3{
+    opacity: 0;
+    transform: translateX(-135%);
+}
+.ani_right_sub3{
+    opacity: 0;
+    transform: translateX(40%);
+}
 #sub_3 .con_3 .txt_1{
     position: absolute;
     top: -16px;
     left: 50%;
-    transform:translateX(-105%);
+    transform: translateX(-105%);
 }
 #sub_3 .con_3 .txt_2{
     position: absolute;
     top: 240px;
-    right: 18%;
+    left: 50%;
+    transform: translateX(10%);
 }
 #sub_3 .con_3 .txt_3{
     position: absolute;
     top: 480px;
-    left: 18%;
+    left: 50%;
+    transform: translateX(-105%);
 }
 #sub_3 .con_3 .txt_4{
     position: absolute;
     top: 736px;
-    right: 18%;
+    left: 50%;
+    transform: translateX(10%);
 }
 #sub_3 .con_3 .txt_1 h4::after,
 #sub_3 .con_3 .txt_3 h4::after{
@@ -738,7 +769,7 @@ html,body{
     height: 100%;
 }
 #sub_6{
-    height: calc(100% - 175px);
+    height: calc(100% - 173px);
     background: url(../img/milk_background.png) no-repeat center center ;
     background-size: cover;
 }

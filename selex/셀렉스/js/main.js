@@ -80,18 +80,14 @@ $(function(){
         let scrollTop_3 = $(document).scrollTop();
         if(scrollTop_3 >100 && scrollTop_3 <200){
             $("#sub_3 .con_2").css("animation","opacity 1s ease-out forwards");
-        } else if(scrollTop_3 >600 && scrollTop_3 <700){
-            $("#sub_3 .con_3 .txt_1").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-        } else if(scrollTop_3 >700 && scrollTop_3 <800){
-            $("#sub_2 .con_3 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_3 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-        } else if(scrollTop_3 >1200 && scrollTop_3 <1300){
-            $("#sub_2 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-        }else if(scrollTop_3 >1700 && scrollTop_3 <1800){
-            $("#sub_2 .con_5 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_5 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        }  else if (scrollTop_3 > 400 &&  scrollTop_3 <500){
+            $("#sub_3 .con_3 .txt_1").css("animation", "appear_left_sub_3 1s ease-out forwards")
+        } else if (scrollTop_3 > 700 &&  scrollTop_3 <800){
+            $("#sub_3 .con_3 .txt_2").css("animation", "appear_right_sub_3 1s ease-out forwards")
+        } else if (scrollTop_3 > 900 &&  scrollTop_3 <1000){
+            $("#sub_3 .con_3 .txt_3").css("animation", "appear_left_sub_3 1s ease-out forwards")
+        } else if (scrollTop_3 > 1200 &&  scrollTop_3 <1300){
+            $("#sub_3 .con_3 .txt_4").css("animation", "appear_right_sub_3 1s ease-out forwards")
         }
     });
         // ^ fitness스크롤 이벤트
@@ -154,7 +150,7 @@ function verticalIndicator1(e) {
   );
 
 
-
+//반응형 스크롤 이벤트
 // if (window.innerWidth <= 549 ) {
 //
 //     if (scrollTop >= 200 && scrollTop <= 870 ) {

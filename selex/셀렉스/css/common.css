@@ -135,7 +135,7 @@ font-family: 'Open Sans', sans-serif;
     position: absolute;
     left: 0;
     display: inline-block;
-    width: 100%;
+    width: 50px;
     height: 2px;
     background: black;
     border-radius: 3px;
@@ -146,7 +146,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #header .header_wrap .hamburger span:last-child{
     top: 100%;
-    width: 80%;
+    width: 45px;
 }
 #header .header_wrap .hamburger:hover span{
     background: green;
@@ -156,7 +156,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #header .header_wrap .hamburger span:last-child.on{
     transform: rotate(-45deg)translate(25%);
-    width: 100%;
+    width: 50px;
 }
 /* mega_menu 스크롤 방지 */
 .mega_menu.active{
@@ -180,7 +180,7 @@ font-family: 'Open Sans', sans-serif;
 
 .mega_menu .gray_line {
     position: absolute;
-    top: 15%;
+    top: 122px;
     width: 100%;
     height: 2px;
     background: #dfdfdf;
@@ -243,7 +243,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .mega_menu .gray_line_v{
     position: absolute;
-    top: 15%;
+    top: 122px;
     left: 27%;
     background: #dfdfdf;
     width: 2px;
@@ -278,7 +278,7 @@ font-family: 'Open Sans', sans-serif;
     width: 46%;
     min-width: 600px;
     overflow: hidden;
-    top: 15%;
+    top: 122px;
     right: 0;
 }
 .mega_menu main .img_box{
@@ -376,3 +376,64 @@ font-family: 'Open Sans', sans-serif;
     color: black;
 }
 /* ! footer END */
+
+/* 반응형 */
+@media screen and (max-width:1080px){
+    #header{
+        min-width: 500px;
+    }
+    #header.slide{
+        box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+        background: white;
+        transition: all 0.5s;
+        color: black;
+    }
+    #header .header_wrap nav .gnb{
+        display: none;
+    }
+    .mega_menu .logo img{
+        opacity: 0;
+    }
+    .mega_menu main .img_box{
+        display: none;
+    }
+    .mega_menu.active{
+        left: 50vw;
+    }
+    .mega_menu #mega_footer .copy {
+        display: none;
+    }
+    .mega_menu #mega_footer .link ul{
+        width: 250px;
+    }
+}
+@media screen and (max-width:899px){
+    .mega_menu .mega_gnb ul{
+        top: 33%;
+        font-size: 25px;
+        height: 300px;
+        align-items: flex-start;
+    }
+    .mega_menu .mega_sub {
+        top: 33%;
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:859px){
+    .mega_menu #mega_footer{
+        display: block;
+    }
+    .mega_menu #mega_footer .link ul{
+        margin-left: 25px;
+        width: 130px;
+        align-items: center;
+    }
+    .mega_menu #mega_footer .link ul>li a:first-child{
+        display: none;
+    }
+    .mega_menu #mega_footer .link ul>li a.on{
+        display: inline-block;
+        font-size: 35px;
+    }
+}

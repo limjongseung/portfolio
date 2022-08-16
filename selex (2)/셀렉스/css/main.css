@@ -359,7 +359,9 @@ video{
 #footer  .copy{
     margin-left: 30px;
     transition: all 0.5s;
-    
+}
+#footer .copy.on{
+    display: none;
 }
 #footer .link{
     margin-right: 30px;
@@ -444,5 +446,13 @@ video{
     .mega_menu #mega_footer .link ul>li a.on{
         display: inline-block;
         font-size: 35px;
+    }
+}
+@media screen and (max-width:600px){
+    #footer .copy{
+        display: none;
+    }
+    #footer .copy.on{
+        display: inline;
     }
 }

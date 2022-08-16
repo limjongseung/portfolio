@@ -77,13 +77,13 @@ $(function(){
         let scrollTop_1 = $(document).scrollTop();
         $(".scroll_box").text(scrollTop_1);
         if ( scrollTop_1 > 200 && scrollTop_1 < 500) {
-          $("#sub_1 .content_2 .content_wrap .img_wrap img").css("animation","appear_left 1s ease-out forwards");
+          $("#sub_1 .content_2 .content_wrap .img_wrap ").css("animation","appear_left 1s ease-out forwards");
           $("#sub_1 .content_2 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
         } else if (scrollTop_1 >500 && scrollTop_1<900){
             $("#sub_1 .content_3 .content_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_1 .content_3 .content_wrap .img_wrap img").css("animation","appear_right 1s ease-out forwards");
+            $("#sub_1 .content_3 .content_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
         } else if (scrollTop_1 > 900){
-            $("#sub_1 .content_4 .content_wrap .img_wrap img").css("animation","appear_left 1s ease-out forwards");
+            $("#sub_1 .content_4 .content_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
             $("#sub_1 .content_4 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
         }
     });

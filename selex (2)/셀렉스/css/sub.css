@@ -16,12 +16,18 @@
     margin: 0 auto;
     transform: translateY(25px);
 }
-#sub_1 .content_1 .content_wrap .img_wrap img{
+#sub_1 .content_1 .content_wrap .img_wrap{
+    width: 970px;
+    overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);    
+}
+#sub_1 .content_1 .content_wrap .img_wrap img{
+    display: block;
+    /* !부모와 이미지태그가 높이가 다른 버그가 발생하여서 디스플레이 block으로 해결 */
 }
 #sub_1 .content_1 .content_wrap .text_wrap{
     width: 380px;
@@ -87,10 +93,14 @@
     margin-bottom: 150px;
     padding: 0 20px ;
 }
-#sub_1 .content_2 .content_wrap .img_wrap img{
+#sub_1 .content_2 .content_wrap .img_wrap {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translateX(-100px);
     opacity: 0;
+    overflow: hidden;
+}
+#sub_1 .content_2 .content_wrap .img_wrap img{
+    display: block;
 }
 @keyframes appear_left{
     from{
@@ -161,10 +171,14 @@ span.module_span{
 #sub_1 .content_3 .content_wrap .text_wrap p{
     font-size: 20px;
 }
-#sub_1 .content_3 .content_wrap .img_wrap img{
+#sub_1 .content_3 .content_wrap .img_wrap{
     box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
     transform:translateX(-100px);
     opacity: 0;
+    overflow: hidden;
+}
+#sub_1 .content_3 .content_wrap .img_wrap img{
+    display: block;
 }
 /* !content_3 END */
 
@@ -177,10 +191,14 @@ span.module_span{
     margin-bottom: 120px;
     padding: 0 20px ;
 }
-#sub_1 .content_4 .content_wrap .img_wrap img{
+#sub_1 .content_4 .content_wrap .img_wrap{
     box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
     transform:translateX(100px);
     opacity: 0;
+    overflow: hidden;
+}
+#sub_1 .content_4 .content_wrap .img_wrap img{
+    display: block;
 }
 #sub_1 .content_4 .content_wrap .text_wrap{
     width: 430px;
@@ -221,15 +239,15 @@ span.module_span{
 }
 #sub_2 .con_1 .con_wrap .img_wrap{
     width: 80%;
-    min-width: 600px;
-    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     overflow: hidden;
-    margin: 0 auto;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }   
 #sub_2 .con_1 .con_wrap .img_wrap img{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    margin: 25px 0px;  
+    display: block;
 }
 #sub_2  .con_1 .con_wrap .text_wrap{
     position: absolute;
@@ -303,9 +321,10 @@ span.module_span{
 }
 #sub_2 .con_common .con_wrap .img_wrap{
     position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 #sub_2 .con_common .con_wrap .img_wrap img{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    display: block;
 }
 #sub_2 .con_common .con_wrap .img_wrap p{
     position: absolute;
@@ -357,10 +376,10 @@ span.module_span{
     overflow: hidden;
     height: 700px;
     margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 #sub_3  .con_1 .con_wrap .img_wrap img{
-    margin: 25px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: block;
 }
 
 #sub_3  .con_1 .con_wrap .text_wrap{
@@ -1119,15 +1138,25 @@ html,body{
         flex-direction: column;
         margin: 0 auto;
     }
+    #sub_2 .sub_title{
+        margin-bottom: 200px;
+    }
+    #sub_2 .con_common .con_wrap .img_wrap p{
+        font-size: 300px;
+    }
 }
 @media screen and (max-width:1000px){
-    #sub_1 .content_1 .content_wrap .img_wrap img{
-        width: 100%;
-        margin: 0 auto;
-        height: auto;
+    #sub_1 .content_1 .content_wrap .img_wrap {
+        width: 700px;
     }
 }
 @media screen and (max-width:820px){
+    #sub_1 .content_1 .content_wrap .img_wrap{
+        width: 80%;
+    }
+    #sub_1 .content_1 .content_wrap .text_wrap{
+        transform: translate(-50%,-50%);
+    }
     #sub_2  .con_1 .con_wrap .text_wrap{
         width: 300px;
     }
@@ -1138,6 +1167,31 @@ html,body{
     #sub_2  .con_1 .con_wrap .text_wrap p{
         font-size: 15px;
     }
+}
+@media screen and (max-width:740px){
+    #sub_1 .content_2,
+    #sub_1 .content_3,
+    #sub_1 .content_4{
+        width: 500px;
+    }
+    #sub_1 .content_2 .content_wrap,
+    #sub_1 .content_3 .content_wrap,
+    #sub_1 .content_4 .content_wrap{
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    #sub_2 .con_common .con_wrap .img_wrap p{
+        font-size: 200px;
+    }
+    #sub_2 .sub_title{
+        width: 360px;
+        font-size: 30px;
+    }
+    #sub_2 .con_common .con_wrap .text_wrap{
+        width: 450px;
+    }
+
 }
 
 

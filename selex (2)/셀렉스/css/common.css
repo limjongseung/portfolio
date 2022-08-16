@@ -352,6 +352,9 @@ font-family: 'Open Sans', sans-serif;
     transition: all 0.5s;
     text-transform: capitalize;
 }
+#footer .copy.on{
+    display: none;
+}
 #footer .link{
     margin-right: 30px;
     font-weight: 700;
@@ -435,5 +438,13 @@ font-family: 'Open Sans', sans-serif;
     .mega_menu #mega_footer .link ul>li a.on{
         display: inline-block;
         font-size: 35px;
+    }
+}
+@media screen and (max-width :600px){
+    #footer .copy{
+        display: none;
+    }
+    #footer .copy.on{
+        display: inline;
     }
 }

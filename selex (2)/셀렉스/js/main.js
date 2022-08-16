@@ -1,6 +1,5 @@
 
 $(function(){
-
     if ($("#header").hasClass("main_header")){
         $("#header").on({
             mouseenter: function () {
@@ -11,7 +10,6 @@ $(function(){
             }
         });
     }
-
     // mega menu 구동
     $(".mega_gnb ul>li:nth-child(2)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
@@ -42,6 +40,14 @@ $(function(){
         $("body").toggleClass("mega");
         $("#header").toggleClass("slide");
     });
+
+    // 만약 slide라는 헤더가 있다면 마우스 들어가도 black 나와도 블랙
+    //헤더로고
+    $(window).resize(function(){ 
+        if (window.innerWidth <= 1180){  
+            $("h1 img").attr("src", "img/selex_black.png");
+        }  
+        }).resize(); 
     // ^ Brand page 스크롤 이벤트
     $(document).on("scroll", function(){
         let scrollTop_1 = $(document).scrollTop();
@@ -256,5 +262,3 @@ function verticalIndicator1(e) {
 //     $img = document.querySelector(" h1> a> img");
 //     $img.src = "img/selex_black.png";
 // }
-
-

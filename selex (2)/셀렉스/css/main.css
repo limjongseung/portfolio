@@ -394,6 +394,8 @@ video{
         transition: all 0.5s;
         background: white;
         color: black;
+        opacity: .99;
+        z-index: 101;
     }
     #header .header_wrap nav .gnb{
         display: none;

@@ -1,15 +1,6 @@
 
 $(function(){
-    if ($("#header").hasClass("main_header")){
-        $("#header").on({
-            mouseenter: function () {
-                $("h1 img").attr("src", "img/selex_black.png");
-            },
-            mouseleave: function () {
-                $("h1 img").attr("src", "img/selex_white.png");
-            }
-        });
-    }
+
     // mega menu 구동
     $(".mega_gnb ul>li:nth-child(2)").mouseenter(function(){
         $(".mega_menu main .img_box img").removeClass("on");
@@ -39,7 +30,28 @@ $(function(){
         $(".mega_menu").toggleClass("active");
         $("body").toggleClass("mega");
         $("#header").toggleClass("slide");
+        $("#header").attr("src","img/selex_black.png")
     });
+
+    if ($("#header").hasClass("slide")){
+        $("#header").on({
+            mouseenter: function () {
+                $("h1 img").attr("src", "img/selex_black.png");
+            },
+            mouseleave: function () {
+                $("h1 img").attr("src", "img/selex_black.png");
+            }
+        });
+    } else {
+        $("#header").on({
+            mouseenter: function () {
+                $("h1 img").attr("src", "img/selex_black.png");
+            },
+            mouseleave: function () {
+                $("h1 img").attr("src", "img/selex_white.png");
+            }
+        });
+    }
 
     // 만약 slide라는 헤더가 있다면 마우스 들어가도 black 나와도 블랙
     //헤더로고

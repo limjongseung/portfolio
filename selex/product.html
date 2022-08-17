@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1.0 , maximum-scale = 1.0">
-    <title>Selex</title>
+    <title>product</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sub.css">
     <script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js'></script>
     <script  src="https://kit.fontawesome.com/3a502c66dc.js"crossorigin="anonymous"></script>
     <script  defer src="js/main.js"></script>
 </head>
 <body>
-    <!-- <div class="scroll_box">0</div> -->
-    <header id="header">
+    <header id="header" class="product">
         <div class="header_wrap">
             <h1>
                 <a href="index.html">
@@ -96,66 +100,79 @@
         </section><!--mega_menu End-->
     </header><!-- ! #heder END -->
 
-    <article id="sub_4">
+    <article id="sub_6">
         <section class="con_1">
-            <div class="con_wrap">
-                <div class="img_wrap">
-                    <img src="img/fitness.png" alt="운동하는 여성">
-                </div>
-                <div class="text_wrap">
-                    <h2>fitness</h2>
-                    <h4 class="font_k">적절한 운동과 영양섭취로 자기주도적인 활기찬 삶 </h4>
-                    <p class="font_k">운동의 본래 목적인 건강에 중점을 두고 <span class="font_e">SELEX</span>를 만들었습니다.<br>건강으로 가는 길 <span class="font_e">SELEX</span> 와 함께 갈수있도록<br>믿고 먹을 수 있게 만들었습니다.</p>
-                 </div>
+            <div class="title_wrap font_k">
+                <p>대한민국 1등 단백질</p>
+                <h2>매일유업 셀렉스 프로틴</h2>
             </div>
-        </section><!-- !con_1 END -->
-
-        <h3 class="sub_title">about selex</h3>
-
-        <section class="con_2">
-            <div class="con_wrap flex">
-                <div class="img_wrap ani_left">
-                    <img src="img/cow_1.png" alt="방목하는 소 이미지">
-                </div>
-                <div class="text_wrap ani_right">
-                    <h3 class="font_k">덴마크 자연방목  원유 사용</h3>
-                    <p class="font_k">덴마크 자연방목 원유를 사용하여 단백질을 쉽게 소화 할 수 있도록<br>단백질을 잘게, 작게 분해시켰습니다.</p>
-                </div>
-            </div>
-        </section><!-- !con_2 END -->
-
-        <section class="con_3">
-            <div class="con_wrap flex">
-                <div class="text_wrap ani_left">
-                    <h3 class="font_k">한국인 대상 인체적용시험 </h3>
-                    <p class="font_k">해외브랜드의 단백질과 다르게 한국인 대상 인체적용시험을 완료하여<br>한국인에게 적합한 단백질 구성과 한국인들이<br>믿고 먹을 수 있도록 만들었습니다. </p>
-                </div>
-                <div class="img_wrap ani_right">
-                    <img src="img/experiment.png" alt="연구하는 연구원">
-                </div>
-            </div>
-        </section><!-- !con_3 END -->
-
-        <section class="con_4">
-            <div class="con_wrap flex">
-                <div class="img_wrap ani_left">
-                    <img src="img/amino_acid.png" alt="아미노산">
-                </div>
-                <div class="text_wrap ani_right">
-                    <h3 class="font_k">9가지 필수 아미노산 모두 함유</h3>
-                    <p class="font_k">체내에서 합성되지 않아 반드시 식품으로 섭취해야하는<br>필수 아미노산 9가지 모두 함유되어 있기 때문에<br><span class="font_e">SELEX</span> 한잔으로 아미노산 영양분을 채울 수 있습니다.</p>
-                </div>
-            </div>
+            <ul class="flex">
+                <li>
+                    <div class="con_left flex">
+                        <div class="txt_box font_k">
+                            <h4>셀렉스 코어프로틴</h4>
+                            <p>온 가족이 함께 먹을 수 있게<br>꼼꼼하게 영양설계된 단백질 음료</p>
+                            <div>
+                                <span class="button--bubble__container">
+                                    <a href="https://www.selexmall.com/shop/shopbrand.html?xcode=002&type=Y" class="button button--bubble" target="_blank">
+                                    자세히 보기
+                                    </a>
+                                    <span class="button--bubble__effect-container">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="button effect-button"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img_box">
+                            <img src="img/selex_core.png" alt="셀렉스코어 프로틴 이미지">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="con_right flex">
+                        <div class="txt_box font_k">
+                            <h4>셀렉스 프로핏</h4>
+                            <p>운동후 흡수 빠른 <span class="font_e">WPI</span>로 단백질함량 20g을<br> 꽉 채운 순수 단백질 보충제 </p>
+                            <div>
+                                <span class="button--bubble__container">
+                                    <a href="https://www.selexmall.com/shop/shopbrand.html?xcode=003&type=Y" class="button button--bubble" target="_blank">
+                                    자세히 보기
+                                    </a>
+                                    <span class="button--bubble__effect-container second">
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="circle top-left"></span>
+                                        <span class="button effect-button"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                        <span class="circle bottom-right"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="img_box">
+                            <img src="img/selex_pro.png" alt="셀렉스프로핏 프로틴 이미지">
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
-
-
     </article>
-
 
     <footer id="footer">
         <div class="copy">
             Copyright&copy; 2016 by Maeil Dairies Co.Ltd All rights
             reserved.
+        </div>
+        <div class="copy on">
+            Copyright&copy; 2016 by Maeil Dairies Co.Ltd <br>
+             All rights reserved.
         </div>
         <div class="link">
             <ul class="font_point">
@@ -169,6 +186,7 @@
         </div>
     </footer>
     <!-- ! footer END -->
+
     
 </body>
 </html>

@@ -348,6 +348,9 @@ span.module_span{
 #sub_2 .con_common .con_wrap .text_wrap p{
     font-size: 25px;
 }
+#sub_2 .con_5 .con_wrap .img_wrap img{
+    width: 400px;
+}
 /* ! con_common END */
 /* ! #sub_2 END */
 
@@ -1262,44 +1265,44 @@ html,body{
         transform: translate(-50%,-50%);
     }
     #sub_2  .con_1 .con_wrap .text_wrap{
-        width: 300px;
+        width: 400px;
     }
     #sub_2  .con_1 .con_wrap .text_wrap h2{
-        font-size: 30px;
+        font-size: 60px;
     }
     #sub_2  .con_1 .con_wrap .text_wrap h4,
     #sub_2  .con_1 .con_wrap .text_wrap p{
-        font-size: 15px;
+        font-size: 20px;
     }
     #sub_3  .con_1 .con_wrap .text_wrap{
-        width: 350px;
+        width: 400px;
     }
     #sub_3  .con_1 .con_wrap .text_wrap h2{
-        font-size: 30px;
+        font-size: 60px;
     }
     #sub_3  .con_1 .con_wrap .text_wrap h4,
     #sub_3  .con_1 .con_wrap .text_wrap p{
-        font-size: 12px;
+        font-size: 18px;
     }
     #sub_4  .con_1 .con_wrap .text_wrap{
-        width: 350px;
+        width: 420px;
     }
     #sub_4  .con_1 .con_wrap .text_wrap h2{
-        font-size: 30px;
+        font-size: 60px;
     }
     #sub_4  .con_1 .con_wrap .text_wrap h4,
     #sub_4  .con_1 .con_wrap .text_wrap p{
-        font-size: 12px;
+        font-size: 18px;
     }
     #sub_5  .con_1 .con_wrap .text_wrap{
-        width: 350px;
+        width: 400px;
     }
     #sub_5  .con_1 .con_wrap .text_wrap h2{
-        font-size: 30px;
+        font-size: 60px;
     }
     #sub_5  .con_1 .con_wrap .text_wrap h4,
     #sub_5  .con_1 .con_wrap .text_wrap p{
-        font-size: 12px;
+        font-size: 20px;
     }
     #sub_5 .con_2 .con_wrap, 
     #sub_5 .con_3 .con_wrap, 
@@ -1357,6 +1360,9 @@ html,body{
      #sub_4 .con_4 .con_wrap .text_wrap p {
         font-size: 14px;
      }
+     #sub_5  .con_1 .con_wrap .text_wrap h2{
+        font-size: 40px;
+    }
      #sub_5 .sub_title{
         width: 430px;
         font-size: 40px;
@@ -1374,34 +1380,168 @@ html,body{
      }
      #sub_6 .con_1 ul>li .con_left,
      #sub_6 .con_1 ul>li .con_right{
+        flex-direction: column-reverse;
+        align-items: center;
         width: 400px;
         word-break: keep-all;
      }
      #sub_6 .con_1 ul>li .con_right .img_box img{
         height: 200px;
      }
-     .button{
-        font-size: 12px;
-        padding: 10px 30px;
+     #sub_6 .con_1 ul>li .con_left .txt_box{
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+     }
+     #sub_6 .con_1 ul>li .con_right .txt_box{
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 40px;
+        text-align: center;
      }
     
 }
 @media screen and (max-width:600px){
+    #sub_1 .content_2 .content_wrap,
+    #sub_1 .content_3 .content_wrap,
+    #sub_1 .content_4 .content_wrap{
+        overflow: hidden;
+        padding: 0px 20px;
+    }
+    #sub_1 .content_2, 
+    #sub_1 .content_3, 
+    #sub_1 .content_4{
+        width: 450px;
+    }
+    #sub_1 .content_1 .content_wrap .text_wrap{
+        padding: 0 20px;
+    }
+    #sub_1 .content_1 .content_wrap .text_wrap h2{
+        font-size: 25px;
+    }
+    #sub_1 .content_1 .content_wrap .text_wrap p:nth-of-type(2){
+        font-size: 15px;
+    }
+    #sub_1 .content_2 .content_wrap .img_wrap,
+    #sub_1 .content_3 .content_wrap .img_wrap,
+    #sub_1 .content_4 .content_wrap .img_wrap{
+        overflow: hidden;
+    }
+    #sub_1 .content_2 .content_wrap .text_wrap h3,
+    #sub_1 .content_3 .content_wrap .text_wrap h3,
+    #sub_1 .content_4 .content_wrap .text_wrap h3{
+        font-size: 30px;
+    }
+    #sub_1 .content_3 .content_wrap .text_wrap p,
+    #sub_1 .content_2 .content_wrap .text_wrap p,
+    #sub_1 .content_4 .content_wrap .text_wrap p{
+        font-size: 15px;
+    }
+    #sub_1 .content_2 .content_wrap .text_wrap,
+    #sub_1 .content_3 .content_wrap .text_wrap,
+    #sub_1 .content_4 .content_wrap .text_wrap {
+        width: 370px;
+    }
+    #sub_2  .con_1 .con_wrap .text_wrap{
+        width: 300px;
+    }
+    #sub_2  .con_1 .con_wrap .text_wrap h2{
+        font-size: 30px;
+    }
+    #sub_2  .con_1 .con_wrap .text_wrap h4,
+    #sub_2  .con_1 .con_wrap .text_wrap p{
+        font-size: 15px;
+    }
     #sub_2 .con_common .con_wrap .img_wrap p{
         font-size: 200px;
     }
     #sub_2 .sub_title{
         width: 360px;
-        font-size: 30px;
+        font-size: 25px;
     }
     #sub_2 .con_common .con_wrap .text_wrap{
-        width: 450px;
+        width: 400px;
+    }
+    #sub_2 .con_common .con_wrap{
+        padding: 0 10px;
+    }
+    #sub_2 .con_common .con_wrap .img_wrap{
+        overflow: hidden;
+    }
+    #sub_2 .con_common .con_wrap .text_wrap{
+        width: 370px;
+    }
+    #sub_2 .con_common .con_wrap .text_wrap h3{
+        font-size: 27px;
+    }
+    #sub_2 .con_common .con_wrap .text_wrap p{
+        font-size: 18px;
+    }
+    #sub_3  .con_1 .con_wrap .text_wrap{
+        width: 300px;
+    }
+    #sub_3  .con_1 .con_wrap .text_wrap h2{
+        font-size: 30px;
+    }
+    #sub_3  .con_1 .con_wrap .text_wrap h4,
+    #sub_3  .con_1 .con_wrap .text_wrap p{
+        font-size: 15px;
     }
     #sub_3 .con_3 .txt_1 h4::after,
     #sub_3 .con_3 .txt_2 h4::after,
     #sub_3 .con_3 .txt_3 h4::after,
     #sub_3 .con_3 .txt_4 h4::after{
         width: 10%;
+    }
+    #sub_4  .con_1 .con_wrap .text_wrap{
+        width: 370px;
+    }
+    #sub_4  .con_1 .con_wrap .text_wrap h2{
+        font-size: 30px;
+    }
+    #sub_4  .con_1 .con_wrap .text_wrap h4,
+    #sub_4  .con_1 .con_wrap .text_wrap p{
+        font-size: 15px;
+    }
+    #sub_4 .sub_title{
+        width: 270px;
+        font-size: 40px;
+    }
+    #sub_4 .con_2 .con_wrap,
+    #sub_4 .con_3 .con_wrap,
+    #sub_4 .con_4 .con_wrap{
+        padding: 0 20px;
+        overflow: hidden;
+    }
+    #sub_4 .con_2 .con_wrap .text_wrap h3,
+    #sub_4 .con_3 .con_wrap .text_wrap h3,
+    #sub_4 .con_4 .con_wrap .text_wrap h3{
+        font-size: 25px;
+   }
+    #sub_5  .con_1 .con_wrap .text_wrap{
+        width: 350px;
+    }
+    #sub_5  .con_1 .con_wrap .text_wrap h2{
+        font-size: 30px;
+    }
+    #sub_5  .con_1 .con_wrap .text_wrap h4,
+    #sub_5  .con_1 .con_wrap .text_wrap p{
+        font-size: 15px;
+    }
+    #sub_5 .sub_title{
+        font-size: 25px;
+        width: 275px;
+    }
+    #sub_5 .con_2 .con_wrap,
+    #sub_5 .con_3 .con_wrap,
+    #sub_5 .con_4 .con_wrap{
+        padding: 0 30px;
+        overflow: hidden;
+    }
+    #sub_5 .con_2 .con_wrap .text_wrap h3, 
+    #sub_5 .con_3 .con_wrap .text_wrap h3, 
+    #sub_5 .con_4 .con_wrap .text_wrap h3 {
+        font-size: 24px;
     }
 
 }

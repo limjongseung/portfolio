@@ -75,35 +75,68 @@ $(function(){
     // ^ Brand page 스크롤 이벤트
     $(document).on("scroll", function(){
         let scrollTop_1 = $(document).scrollTop();
+        let windowWidth= $(window).width();
         $(".scroll_box").text(scrollTop_1);
-        if ( scrollTop_1 > 200 && scrollTop_1 < 500) {
-          $("#sub_1 .content_2 .content_wrap .img_wrap ").css("animation","appear_left 1s ease-out forwards");
-          $("#sub_1 .content_2 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-        } else if (scrollTop_1 >500 && scrollTop_1<900){
-            $("#sub_1 .content_3 .content_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_1 .content_3 .content_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
-        } else if (scrollTop_1 > 900){
-            $("#sub_1 .content_4 .content_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_1 .content_4 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        if (windowWidth >=1120){
+            if ( scrollTop_1 > 200 && scrollTop_1 < 500) {
+                $("#sub_1 .content_2 .content_wrap .img_wrap ").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_1 .content_2 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+              } else if (scrollTop_1 >500 && scrollTop_1<900){
+                  $("#sub_1 .content_3 .content_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+                  $("#sub_1 .content_3 .content_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+              } else if (scrollTop_1 > 900){
+                  $("#sub_1 .content_4 .content_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                  $("#sub_1 .content_4 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+              }
+        } else if (windowWidth <1120){
+            if ( scrollTop_1 > 300 && scrollTop_1 < 500) {
+                $("#sub_1 .content_2 .content_wrap .img_wrap ").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_1 .content_2 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+              } else if (scrollTop_1 >800 && scrollTop_1<1000){
+                  $("#sub_1 .content_3 .content_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+                  $("#sub_1 .content_3 .content_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+              } else if (scrollTop_1 > 1300){
+                  $("#sub_1 .content_4 .content_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                  $("#sub_1 .content_4 .content_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+              }
         }
     });
     // ^ winwin page 스크롤 이벤트
     $(document).on("scroll", function(){
         let scrollTop_2 = $(document).scrollTop();
-        if(scrollTop_2 >100 && scrollTop_2 <200){
-            $("#sub_2 .sub_title").css("animation","opacity 1s ease-out forwards");
-        } else if(scrollTop_2 >300 && scrollTop_2 <400){
-            $("#sub_2 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-        } else if(scrollTop_2 >700 && scrollTop_2 <800){
-            $("#sub_2 .con_3 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_3 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-        } else if(scrollTop_2 >1200 && scrollTop_2 <1300){
-            $("#sub_2 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-        }else if(scrollTop_2 >1700 && scrollTop_2 <1800){
-            $("#sub_2 .con_5 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-            $("#sub_2 .con_5 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+        let windowWidth= $(window).width();
+        if(windowWidth >= 1120){
+            if(scrollTop_2 >100 && scrollTop_2 <200){
+                $("#sub_2 .sub_title").css("animation","opacity 1s ease-out forwards");
+            } else if(scrollTop_2 >300 && scrollTop_2 <400){
+                $("#sub_2 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            } else if(scrollTop_2 >700 && scrollTop_2 <800){
+                $("#sub_2 .con_3 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_3 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            } else if(scrollTop_2 >1200 && scrollTop_2 <1300){
+                $("#sub_2 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            }else if(scrollTop_2 >1700 && scrollTop_2 <1800){
+                $("#sub_2 .con_5 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_5 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            }
+        } else if (windowWidth < 1120){
+            if(scrollTop_2 >100 && scrollTop_2 <200){
+                $("#sub_2 .sub_title").css("animation","opacity 1s ease-out forwards");
+            } else if(scrollTop_2 >500 && scrollTop_2 <700){
+                $("#sub_2 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            } else if(scrollTop_2 >1200 && scrollTop_2 <1400){
+                $("#sub_2 .con_3 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_3 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            } else if(scrollTop_2 >1700 && scrollTop_2 <1900){
+                $("#sub_2 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            }else if(scrollTop_2 >2500){
+                $("#sub_2 .con_5 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                $("#sub_2 .con_5 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            }
         }
     });
     //shared 스크롤 이벤트
@@ -111,6 +144,7 @@ $(function(){
     $(document).on("scroll", function(){
         let scrollTop_3 = $(document).scrollTop();
         let windowWidth= $(window).width();
+        $("#sub_3").addClass("on");
         if(windowWidth >= 1190){
             if(scrollTop_3 >100 && scrollTop_3 <200){
                 $("#sub_3 .con_2").css("animation","opacity 1s ease-out forwards");
@@ -124,9 +158,9 @@ $(function(){
                 $("#sub_3 .con_3 .txt_4").css("animation", "appear_right_sub_3 1s ease-out forwards")
             }
         } else if(windowWidth  < 1190){
-            if(scrollTop_3 >100 && scrollTop_3 <200){
+            if( scrollTop_3 <200){
                 $("#sub_3 .con_2").css("animation","opacity 1s ease-out forwards");
-            }  else if (scrollTop_3 > 400 &&  scrollTop_3 <600){
+            }  else if (scrollTop_3 > 500 &&  scrollTop_3 <700){
                 $("#sub_3 .con_3 .txt_1").css("animation", "appear_left_sub_3_responsive 1s ease-out forwards")
             } else if (scrollTop_3 > 700 &&  scrollTop_3 <800){
                 $("#sub_3 .con_3 .txt_2").css("animation", "appear_left_sub_3_responsive 1s ease-out forwards")
@@ -138,48 +172,82 @@ $(function(){
         }
     });
     $(window).resize(function(){ 
-    if (window.innerWidth >= 1190){  
-        $("#sub_3 .con_3 .txt_1").css("animation","appear_left_sub_3 1s ease-out forwards ")
-        $("#sub_3 .con_3 .txt_3").css("animation","appear_left_sub_3 1s ease-out forwards ")
-        $("#sub_3 .con_3 .txt_2").css("animation","appear_right_sub_3 1s ease-out forwards ")
-        $("#sub_3 .con_3 .txt_4").css("animation","appear_right_sub_3 1s ease-out forwards ")
-    }  else if (window.innerWidth < 1190){
-        $("#sub_3 .con_3 .txt_1").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
-        $("#sub_3 .con_3 .txt_3").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
-        $("#sub_3 .con_3 .txt_2").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
-        $("#sub_3 .con_3 .txt_4").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
-    }
+        if($("#sub_3").hasClass("on")){
+            if (window.innerWidth >= 1190){  
+                $("#sub_3 .con_3 .txt_1").css("animation","appear_left_sub_3 1s ease-out forwards ")
+                $("#sub_3 .con_3 .txt_3").css("animation","appear_left_sub_3 1s ease-out forwards ")
+                $("#sub_3 .con_3 .txt_2").css("animation","appear_right_sub_3 1s ease-out forwards ")
+                $("#sub_3 .con_3 .txt_4").css("animation","appear_right_sub_3 1s ease-out forwards ")
+            }  else if (window.innerWidth < 1190){
+                $("#sub_3 .con_3 .txt_1").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
+                $("#sub_3 .con_3 .txt_3").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
+                $("#sub_3 .con_3 .txt_2").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
+                $("#sub_3 .con_3 .txt_4").css("animation","appear_left_sub_3_responsive 1s ease-out forwards ")
+            }
+        }
     }).resize(); 
         // ^ fitness스크롤 이벤트
         $(document).on("scroll", function(){
             let scrollTop_4 = $(document).scrollTop();
-            if(scrollTop_4 >100 && scrollTop_4 < 200){
-                $("#sub_4 .sub_title").css("animation","opacity 1s ease-out forwards");
-            }else if(scrollTop_4 >200 && scrollTop_4 <300){
-                $("#sub_4 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-                $("#sub_4 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-            } else if(scrollTop_4 >800 && scrollTop_4 <900){
-                $("#sub_4 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
-                $("#sub_4 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
-            } else if(scrollTop_4 >1300 && scrollTop_4 <1400){
-                $("#sub_4 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-                $("#sub_4 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            let windowWidth= $(window).width();
+            if (windowWidth >1190){
+                if(scrollTop_4 >100 && scrollTop_4 < 200){
+                    $("#sub_4 .sub_title").css("animation","opacity 1s ease-out forwards");
+                }else if(scrollTop_4 >200 && scrollTop_4 <300){
+                    $("#sub_4 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_4 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                } else if(scrollTop_4 >800 && scrollTop_4 <900){
+                    $("#sub_4 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+                    $("#sub_4 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+                } else if(scrollTop_4 >1300 && scrollTop_4 <1400){
+                    $("#sub_4 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_4 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                }
+            } else if( windowWidth <=1190){
+                if(scrollTop_4 >100 && scrollTop_4 < 200){
+                    $("#sub_4 .sub_title").css("animation","opacity 1s ease-out forwards");
+                }else if(scrollTop_4 >500 && scrollTop_4 <700){
+                    $("#sub_4 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_4 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                } else if(scrollTop_4 >1200 && scrollTop_4 <1400){
+                    $("#sub_4 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+                    $("#sub_4 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+                } else if(scrollTop_4 >1800 && scrollTop_4 <2000){
+                    $("#sub_4 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_4 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                }
             }
         });
         // sustainability 스크롤 이벤트
         $(document).on("scroll", function(){
             let scrollTop_5 = $(document).scrollTop();
-            if(scrollTop_5 >100 && scrollTop_5 < 200){
-                $("#sub_5 .sub_title").css("animation","opacity 1s ease-out forwards");
-            }else if(scrollTop_5 >200 && scrollTop_5 <300){
-                $("#sub_5 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-                $("#sub_5 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
-            } else if(scrollTop_5 >800 && scrollTop_5 <900){
-                $("#sub_5 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
-                $("#sub_5 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
-            } else if(scrollTop_5 >1300 && scrollTop_5 <1400){
-                $("#sub_5 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
-                $("#sub_5 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+            let windowWidth= $(window).width();
+            if (windowWidth > 1190){
+                if(scrollTop_5 >100 && scrollTop_5 < 200){
+                    $("#sub_5 .sub_title").css("animation","opacity 1s ease-out forwards");
+                }else if(scrollTop_5 >200 && scrollTop_5 <300){
+                    $("#sub_5 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_5 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                } else if(scrollTop_5 >800 && scrollTop_5 <900){
+                    $("#sub_5 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+                    $("#sub_5 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+                } else if(scrollTop_5 >1300 && scrollTop_5 <1400){
+                    $("#sub_5 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_5 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                }
+            }else if (windowWidth <= 1190){
+                if(scrollTop_5 >100 && scrollTop_5 < 200){
+                    $("#sub_5 .sub_title").css("animation","opacity 1s ease-out forwards");
+                }else if(scrollTop_5 >500 && scrollTop_5 <700){
+                    $("#sub_5 .con_2 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_5 .con_2 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                } else if(scrollTop_5 >1200 && scrollTop_5 <1500){
+                    $("#sub_5 .con_3 .con_wrap .img_wrap").css("animation","appear_right 1s ease-out forwards");
+                    $("#sub_5 .con_3 .con_wrap .text_wrap").css("animation","appear_left 1s ease-out forwards");
+                } else if(scrollTop_5 >1900 ){
+                    $("#sub_5 .con_4 .con_wrap .img_wrap").css("animation","appear_left 1s ease-out forwards");
+                    $("#sub_5 .con_4 .con_wrap .text_wrap").css("animation","appear_right 1s ease-out forwards");
+                }
             }
         });
         //product_ 버튼구동

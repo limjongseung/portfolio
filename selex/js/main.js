@@ -1,6 +1,4 @@
-/* 
-   shared 라는 페이지에서는스크롤 이벤트후  요소에 클라스명 on을 추가하여 스크롤 이벤트를 먼저하게함
-*/
+
 
 $(function () {
     if ($("#header").hasClass("main_header")) {
@@ -42,36 +40,7 @@ $(function () {
         $(".mega_menu").toggleClass("active");
         $("body").toggleClass("mega");
         $("#header").toggleClass("slide");
-        // $("h1 img").attr("src","img/selex_black.png")
     });
-
-    // if ($("#header").hasClass("slide")){
-    //     $("#header").on({
-    //         mouseenter: function () {
-    //             $("h1 img").attr("src", "img/selex_black.png");
-    //         },
-    //         mouseleave: function () {
-    //             $("h1 img").attr("src", "img/selex_black.png");
-    //         }
-    //     });
-    // } else {
-    //     $("#header").on({
-    //         mouseenter: function () {
-    //             $("h1 img").attr("src", "img/selex_black.png");
-    //         },
-    //         mouseleave: function () {
-    //             $("h1 img").attr("src", "img/selex_white.png");
-    //         }
-    //     });
-    // }
-
-    // 만약 slide라는 헤더가 있다면 마우스 들어가도 black 나와도 블랙
-    //헤더로고
-    // $(window).resize(function(){ 
-    //     // if (window.innerWidth <= 1180){  
-    //     //     $("h1 img").attr("src", "img/selex_black.png");
-    //     // }  
-    //     }).resize(); 
     // ^ Brand page 스크롤 이벤트
     $(document).on("scroll", function () {
         let scrollTop_1 = $(document).scrollTop();
@@ -140,7 +109,6 @@ $(function () {
         }
     });
     //shared 스크롤 이벤트
-    //on이라는 클래스명을 넣고 만약 클래스명이 있다면 resize 이벤트를 열고 그렇지 않다면  스크롤 이벤트를 먼저 선행하도록 강제
     $(document).on("scroll", function () {
         let scrollTop_3 = $(document).scrollTop();
         let windowWidth = $(window).width();

@@ -2,7 +2,7 @@
 ol,ul,dl{list-style: none;}
 a{text-decoration: none; color: inherit;}
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,400&family=Noto+Sans+KR:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
@@ -49,25 +49,72 @@ body{font-family: 'Montserrat', sans-serif;}
     margin-top: 100vh;
     display: flex;
     justify-content: left;
+    align-items: center;
 }
-#main .con_2 .img_wrap{
-    padding-top: 35px;
-    margin-left: 80px;
+#main .con_2 .img_wrap {
+    margin-top: 35px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+    margin: 35px 0px 40px 90px;
 }
-#main .con_2 .text_wrap{
+#main .con_2  .text_wrap .text_wrap_1 {
+    font-size: 25px;
+    font-weight: 900;
+    color: #818181;
+    transform: translate(-20%,-90%);
+}
+#main .con_2  .text_wrap .text_wrap_2{
+    margin-left: 20px;
+}
+#main .con_2 .img_wrap .text_wrap .text_wrap_1 p {
+    margin-bottom: 5px;
+}
+#main .con_3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: white;
+}
+#main .con_3  .img_wrap{
     position: relative;
-    margin-top: 250px;
+    width: 915px;
+    height: 476px;
+    margin-right: 10px;
 }
-#main .con_2 .text_wrap .text_wrap_1{
+#main .con_3  .img_wrap .img_text{
     position: absolute;
-    left: 20px;
-    margin-right: 100px;
+    text-align: center;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
 }
-#main .con_2 .text_wrap .text_wrap_2{}
+#main .con_3 .text_wrap{
+    margin: 0 auto;
+}
+#main .con_3 .text_wrap{
+    text-align: center;
+}
+#main .con_3 .text_wrap .text_wrap_main{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 160px;
+    padding-top: 80px;
+}
+#main .con_3 .text_wrap .text_wrap_main span{
+    font-weight: 900;
+    color: #AF0000;
+}
 
-
-
-
+#main .con_3 .text_wrap .text_wrap_link{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#main .con_3 .text_wrap .text_wrap_link p:nth-child(2){
+    font-weight: 800;
+    margin-bottom: 10px;
+}
 
 
 

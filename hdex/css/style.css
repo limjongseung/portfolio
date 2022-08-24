@@ -80,6 +80,7 @@ body{font-family: 'Montserrat', sans-serif;}
     width: 915px;
     height: 476px;
     margin-right: 10px;
+    margin-bottom: 70px;
 }
 #main .con_3  .img_wrap .img_text{
     position: absolute;
@@ -88,6 +89,9 @@ body{font-family: 'Montserrat', sans-serif;}
     left: 50%;
     transform: translateX(-50%);
     color: white;
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: 0px 0px 8px  black;
 }
 #main .con_3 .text_wrap{
     margin: 0 auto;
@@ -115,6 +119,48 @@ body{font-family: 'Montserrat', sans-serif;}
     font-weight: 800;
     margin-bottom: 10px;
 }
+/* con_3 END */
+
+#main .con_4{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+#main .con_4 .img_wrap1{
+    position: relative;
+    margin-top: 230px;
+}
+#main .con_4 .img_wrap1 .img_elipse{
+    position: absolute;
+    top: -15%;
+    right: -25%;
+    animation: spin 17s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+#main .con_4 .img_wrap1 .img_text{
+    position: absolute;
+    width: 700px;
+    top: 55%;
+    left: 50%;
+    font-size: 42px;
+    font-weight: 700;
+    transform: translateX(30%);
+}
+#main .con_4 .img_wrap1 .img_text p:nth-child(2){
+    padding-left: 18px;
+}
+
+#main .con_4 .img_wrap2{
+    margin-right: 30px;
+}
+
 
 
 

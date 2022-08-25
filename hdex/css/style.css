@@ -1,15 +1,16 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 *{margin: 0; padding: 0; border:0; box-sizing: border-box;}
 ol,ul,dl{list-style: none;}
 a{text-decoration: none; color: inherit;}
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 /* 폰트 모듈 */
 .font_e{font-family: 'Montserrat', sans-serif;}
 .font_k{font-family: 'Noto Sans KR', sans-serif;}
-
+span{font-family: "Noto Sans KR",sans-serif;}
 body{font-family: 'Montserrat', sans-serif;}
 
 
@@ -52,10 +53,7 @@ body{font-family: 'Montserrat', sans-serif;}
     align-items: center;
 }
 #main .con_2 .img_wrap {
-    margin-top: 35px;
-    margin-left: 90px;
-    margin-bottom: 40px;
-    margin: 35px 0px 40px 90px;
+    margin: 35px 0 40px 90px;
 }
 #main .con_2  .text_wrap .text_wrap_1 {
     font-size: 25px;
@@ -91,7 +89,7 @@ body{font-family: 'Montserrat', sans-serif;}
     color: white;
     font-size: 32px;
     font-weight: 800;
-    text-shadow: 0px 0px 8px  black;
+    text-shadow: 0 0 8px  black;
 }
 #main .con_3 .text_wrap{
     margin: 0 auto;
@@ -146,7 +144,7 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 #main .con_4 .img_wrap1 .img_text{
     position: absolute;
-    width: 700px;
+    width: 800px;
     top: 55%;
     left: 50%;
     font-size: 42px;
@@ -184,6 +182,10 @@ body{font-family: 'Montserrat', sans-serif;}
     font-size: 40px;
     margin-right: 200px;
     text-align: right;
+    /*text-align:left;*/
+    /*width:1100px;*/
+    /*margin-left:auto;*/
+
 
 }
 #main .con_5 .text_wrap p{
@@ -253,40 +255,45 @@ body{font-family: 'Montserrat', sans-serif;}
     padding-bottom: 100px;
 }
 #main .con_8 .img_wrap{
-    display: flex;
     width: 100%;
     height: 200px;
-    background: url(../img/hdex_band.png)  center center no-repeat;
+    background: url("../img/hdex_band.png")  center center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 #main .con_8 .img_wrap .text_wrap{
-    margin-top: 20px;
-    margin-left: 100px;
+    display: flex;
+    width: 1200px;
+    margin:  0 auto;
+    padding-top: 20px;
+    align-items: center;
+}
+
+#main .con_8 .img_wrap .text_sub{
     text-align: right;
     color: white;
     font-weight: 600;
 }
-#main .con_8 .img_wrap .text_wrap p:nth-child(1){
+#main .con_8 .img_wrap .text_sub p:nth-child(1){
     font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
 }
-#main .con_8 .img_wrap .text_wrap p:nth-child(2){
+#main .con_8 .img_wrap .text_sub p:nth-child(2){
     font-size: 16px;
 }
-#main .con_8 .img_wrap .text_wrap p:nth-child(3){
+#main .con_8 .img_wrap .text_sub p:nth-child(3){
     font-size: 16px;
 }
-#main .con_8 .img_wrap .text_wrap p:nth-child(4){
+#main .con_8 .img_wrap .text_sub p:nth-child(4){
     font-size: 20px;
 }
 #main .con_8 .img_wrap .text_main{
     color: white;
     font-size: 87px;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 32px;
 }
 #main .con_9{
@@ -312,15 +319,68 @@ body{font-family: 'Montserrat', sans-serif;}
 #main .con_10 .con_list >li{
     margin-bottom: 25px;
 }
+
+
+
+
+
+
+
+
+/* ! 호버시 움직이는 효과 추가 */
+
 #main .con_10 .con_list >li .img_wrap{
     margin-bottom: 18px;
+    width:300px;
+    height:453px;
+    overflow:hidden;
 }
+#main .con_10 .con_list >li .img_wrap p{
+    position: relative;
+    left:0;
+    top:0;
+    transition:all 1s;
+
+}
+#main .con_10 .con_list >li .img_wrap:hover p {
+    left:50px;
+    transition-delay:0.25s;
+}
+#main .con_10 .con_list >li .img_wrap img{
+    transform: scale(1) translate(0,0);
+    transition:all 1s;
+}
+#main .con_10 .con_list >li .img_wrap:hover img{
+    transform: scale(1.5) translate(0,-25px);
+    left:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #main .con_10 .con_list >li h4{
     margin-bottom: 5px;
 }
 #main .con_10 .con_list >li p:nth-child(3){
     margin-bottom: 5px;
+    text-decoration: line-through;
+    color: #939393;
 }
+#main .con_10 .con_list >li p:nth-child(4){
+    font-weight: 700;
+}
+
 #main .gray_wrap{
     width: 100%;
     background: white;
@@ -351,6 +411,37 @@ body{font-family: 'Montserrat', sans-serif;}
     font-size: 12px;
     padding-bottom: 80px;
 }
+#main .con_12 .con_list >li{
+    margin-bottom: 25px;
+}
+#main .con_12 .con_list >li .img_wrap{
+    margin-bottom: 18px;
+}
+#main .con_12 .con_list >li h4{
+    margin-bottom: 5px;
+}
+#main .con_12 .con_list >li p:nth-child(3){
+    margin-bottom: 5px;
+    text-decoration: line-through;
+    color: #939393;
+}
+#main .con_12 .con_list >li p:nth-child(4){
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

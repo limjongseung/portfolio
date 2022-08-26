@@ -13,10 +13,17 @@ a{text-decoration: none; color: inherit;}
 span{font-family: "Noto Sans KR",sans-serif;}
 body{font-family: 'Montserrat', sans-serif;}
 
-.white{
-    color:white;
-}
+.white{color:white;}
+.underline{text-decoration: underline;}
 
+.scroll_box{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 1001;
+}
 #header{
     position: fixed;
     width: 100%;
@@ -63,26 +70,24 @@ body{font-family: 'Montserrat', sans-serif;}
     transform: translateX(-50%);
 }
 #main .con_1 .logo_wrap2{
-    top: -55.5vh;
-    animation: zig1 .8s linear infinite;
+    top: -55.2vh;
+    animation: zig1 .5s linear infinite;
     /* animation: zig3 1s linear infinite; */
 }
 
 #main .con_1 .logo_wrap3{
-    left: 50.5%;
+    left: 50.2%;
     animation: zig2 0.5s linear infinite;
 }
 #main .con_1 .logo_wrap4{
-    left: 49.5%;
+    left: 49.8%;
     /* animation: zig3 1s linear infinite; */
     animation: zig1 .5s linear infinite;
 }
 #main .con_1 .logo_wrap5{
-    top: -55vh;
+    left: 50.3%;
     animation: zig2 .5s linear infinite;
 }
-
-
 @keyframes zig1 {
     0% {
         opacity: 0
@@ -128,7 +133,6 @@ body{font-family: 'Montserrat', sans-serif;}
         opacity: 0
     }
 }
-
 #main .con_1 .video_wrap video{
     width: 100vw;
     height: 100vh;
@@ -473,16 +477,44 @@ body{font-family: 'Montserrat', sans-serif;}
 #main .con_10 .con_list >li p:nth-child(4){
     font-weight: 700;
 }
+#main .con_10 .con_list>li .color_box{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#main .con_10 .con_list>li .color_box>li{
+    margin-right: 7px;
+}
+#main .con_10 .con_list>li .color_box>li:last-child{
+    margin-right: 0;
+}
+
 
 #main .gray_wrap{
     width: 100%;
-    background: white;
-    padding-bottom: 70px;
+    background-color: white;
+    padding-bottom: 30px;
 }
-#main .gray{
-    width: 100%;
-    background: #D9D9D9;
-    height: 10px;
+#main .gray_wrap .gray{
+    background: #DEE2ED;
+    height: 280px;
+}
+#main .gray_wrap .gray .con_wrap{
+    display: flex;
+    align-items: center;
+    width: 940px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+#main .gray_wrap .gray .text_wrap{
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+#main .gray_wrap .gray .text_wrap p:first-child{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 #main .con_11{
     text-align: center;
@@ -521,6 +553,18 @@ body{font-family: 'Montserrat', sans-serif;}
 #main .con_12 .con_list >li p:nth-child(4){
     font-weight: 700;
 }
+#main .con_12 .con_list>li .color_box{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#main .con_12 .con_list>li .color_box>li{
+    margin-right: 7px;
+}
+#main .con_12 .con_list>li .color_box>li:last-child{
+    margin-right: 0;
+}
+
 #footer{
     background: black;
     color: #B5B5B5;

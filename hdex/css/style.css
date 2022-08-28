@@ -77,6 +77,10 @@ body{font-family: 'Montserrat', sans-serif;}
     top:-50vh;
     left: 35%;
 }
+#main .con_1 .logo_wrap,
+#main .con_1 .logo_wrap2{
+    animation: opacity 4s forwards;
+}
 #main .con_1 .logo_wrap3{
     animation: blur 4s linear forwards;
 }
@@ -100,6 +104,14 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 #main .con_1 .logo_wrap10{
     animation: zig 2s ease-in infinite;
+}
+@keyframes opacity {
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
 }
 @keyframes blur{
     0%{
@@ -211,20 +223,31 @@ body{font-family: 'Montserrat', sans-serif;}
 
 #main .con_2  .text_wrap .text_wrap_1 {
     display: inline-block;
-    width: 0px;
+    width: 384px;
     height: 72px;
-    overflow: hidden;
     font-size: 25px;
     font-weight: 900;
     color: #818181;
     transform: translate(-20%,-90%);
+}
+#main .con_2  .text_wrap .text_wrap_1 .text_e{
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
     transition:all 0.5s;
 }
-#main .con_2  .text_wrap .text_wrap_1.on{
+#main .con_2  .text_wrap .text_wrap_1 .text_e.on{
     width: 384px;
 }
 #main .con_2  .text_wrap .text_wrap_2{
+    width: 0px;
+    height: 46px;
     margin-left: 20px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#main .con_2  .text_wrap .text_wrap_2.on{
+    width: 364px;
 }
 #main .con_2 .img_wrap .text_wrap .text_wrap_1 p {
     margin-bottom: 5px;
@@ -242,7 +265,21 @@ body{font-family: 'Montserrat', sans-serif;}
     margin-right: 50px;
     margin-bottom: 70px;
 }
+#main .con_3  .img_wrap>p:first-child{
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#main .con_3  .img_wrap>p:first-child.on{
+    width: 915px;
+}
+
 #main .con_3  .img_wrap .img_text{
+    width: 412px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
     position: absolute;
     text-align: center;
     bottom: 70px;
@@ -253,6 +290,10 @@ body{font-family: 'Montserrat', sans-serif;}
     font-weight: 800;
     text-shadow: 0 0 8px  black;
 }
+
+#main .con_3  .img_wrap .img_text.on{
+    height: 91px;
+}
 #main .con_3 .text_wrap{
     margin: 0 auto;
 }
@@ -260,10 +301,17 @@ body{font-family: 'Montserrat', sans-serif;}
     text-align: center;
 }
 #main .con_3 .text_wrap .text_wrap_main{
+    width: 376px;
+    height: 0px;
+    overflow: hidden;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 160px;
     padding-top: 80px;
+    transition: all 0.5s;
+}
+#main .con_3 .text_wrap .text_wrap_main.on{
+    height: 211px;
 }
 #main .con_3 .text_wrap .text_wrap_main span{
     font-weight: 900;
@@ -271,9 +319,16 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 
 #main .con_3 .text_wrap .text_wrap_link{
+    width: 376px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
+}
+#main .con_3 .text_wrap .text_wrap_link.on{
+    height: 112px;
 }
 #main .con_3 .text_wrap .text_wrap_link p:nth-child(2){
     font-weight: 800;
@@ -304,22 +359,56 @@ body{font-family: 'Montserrat', sans-serif;}
         transform:rotate(-360deg);
     }
 }
+#main .con_4 .img_wrap1 .img_wrap_scroll{
+    width: 657px;
+    height: 997px;
+}
+#main .con_4 .img_wrap1 .img_wrap_scroll>p{
+    width:0px;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#main .con_4 .img_wrap1 .img_wrap_scroll>p.on{
+    width: 657px;
+}
+
+
 #main .con_4 .img_wrap1 .img_text{
     position: absolute;
-    width: 800px;
+    width: 780px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
     top: 55%;
     left: 50%;
     font-size: 42px;
     font-weight: 700;
     transform: translateX(30%);
 }
+#main .con_4 .img_wrap1 .img_text.on{
+    height: 121px;
+}
 #main .con_4 .img_wrap1 .img_text p:nth-child(2){
     padding-left: 24px;
 }
 
 #main .con_4 .img_wrap2{
+    width: 451px;
+    height: 1387px;
     margin-right: 30px;
 }
+#main .con_4 .img_wrap2 p{
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#main .con_4 .img_wrap2 p.on{
+    height: 676px;
+}
+
+
 #main .con_band{
     background: white;
 }
@@ -338,17 +427,48 @@ body{font-family: 'Montserrat', sans-serif;}
     margin-left: 90px;
     margin-bottom: 50px;
 }
+#main .con_5 .img_wrap>p{
+    /* width: 100%; */
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#main .con_5 .img_wrap>p.on{
+    width: 100%;
+}
+
 #main .con_5 .img_wrap .logo_wrap{
+    width: 97px;
+    height: 0;
+    /* height: 625px; */
+    overflow: hidden;
+    transition: all 0.5s;
     position: absolute;
     top: 30%;
     right: -100px;
 }
+#main .con_5 .img_wrap .logo_wrap.on{
+    height: 625px;
+}
+
 #main .con_5 .text_wrap{
+    height: 240px;
     font-size: 40px;
     margin-right: 200px;
     text-align:left;
     width:1100px;
     margin-left:auto;
+}
+#main .con_5 .text_wrap .text_scroll{
+    width: 100%;
+    height: 0;
+    /* height: 240px; */
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#main .con_5 .text_wrap .text_scroll.on{
+    height: 240px;
 }
 #main .con_5 .text_wrap p{
     margin-bottom: 5px;
@@ -371,6 +491,22 @@ body{font-family: 'Montserrat', sans-serif;}
     height: 739px;
     margin-left: 80px;
 }
+#main .con_6 .img_wrap1{
+    width: 493px;
+    height: 739px;
+}
+#main .con_6 .img_wrap1 p{
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#main .con_6 .img_wrap1 p.on{
+    height: 100%;
+}
+
+
+
 #main .con_6 .img_wrap1 .img_text{
     position: absolute;
     top: 20%;

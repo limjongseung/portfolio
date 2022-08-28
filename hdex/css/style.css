@@ -209,14 +209,19 @@ body{font-family: 'Montserrat', sans-serif;}
     height:100%;
 }
 
-
-
-
 #main .con_2  .text_wrap .text_wrap_1 {
+    display: inline-block;
+    width: 0px;
+    height: 72px;
+    overflow: hidden;
     font-size: 25px;
     font-weight: 900;
     color: #818181;
     transform: translate(-20%,-90%);
+    transition:all 0.5s;
+}
+#main .con_2  .text_wrap .text_wrap_1.on{
+    width: 384px;
 }
 #main .con_2  .text_wrap .text_wrap_2{
     margin-left: 20px;
@@ -315,9 +320,12 @@ body{font-family: 'Montserrat', sans-serif;}
 #main .con_4 .img_wrap2{
     margin-right: 30px;
 }
-#main .con_4 .img_wrap{
+#main .con_band{
+    background: white;
+}
+#main .con_band .img_wrap{
     overflow: hidden;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
 }
 
 #main .con_5{

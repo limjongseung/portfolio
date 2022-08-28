@@ -7,7 +7,9 @@ $(document).on("scroll",function(){
     if( scrollTop>=800 ) {
         $("#main .con_2 .img_wrap").addClass("on");
         $("#main .con_2  .text_wrap .text_wrap_1").addClass("on");
-    };
+    } else if (scrollTop >=900){
+        $("main")
+    }
 });
 
 

@@ -74,14 +74,35 @@ $(document).on("scroll",function(){
 $(document).on("scroll",function(){
     let scrollTop = $(document).scrollTop();
     if(scrollTop >= 5200){
-            $("#main .con_6 .img_wrap1 p").addClass("on")
+            $("#main .con_6 .img_wrap1>p").addClass("on")
     }
 });
+$(document).on("scroll",function(){
+    let scrollTop = $(document).scrollTop();
+    if(scrollTop >= 5300){
+            $("#main .con_6 .img_wrap1 .img_text .text_scroll").addClass("on")
+    }
+});
+// 이미지가 아닌 텍스트를 가로로 나오게 했을시  글자가 타이핑하듯 나오는 현상 해결
 
-
-
-
-
+$(document).on("scroll",function(){
+    let scrollTop = $(document).scrollTop();
+    if(scrollTop >= 5600){
+            $("#main .con_6 .img_wrap2>p").addClass("on")
+    }
+});
+$(document).on("scroll",function(){
+    let scrollTop = $(document).scrollTop();
+    if(scrollTop >= 6600){
+            $("#main .con_7 .img_wrap>p").addClass("on")
+    }
+});
+$(document).on("scroll",function(){
+    let scrollTop = $(document).scrollTop();
+    if(scrollTop >= 6700){
+            $("#main .con_7 .text_wrap .text_scroll").addClass("on")
+    }
+});
 
 
 

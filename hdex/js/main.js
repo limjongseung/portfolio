@@ -402,6 +402,66 @@ $(function(){
     $("#main .con_12 .con_list>li:nth-child(2) .color_box").mouseleave(function(){
         $("#main .con_12 .con_list>li:nth-child(2) .img_wrap img").attr("src", "img/heo_con2.png");
     });
+    $("#main .con_12 .con_list>li:nth-child(3) .color_box>li:nth-child(1)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(3) .img_wrap img").attr("src", "img/heo_main_short_black.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(3) .color_box>li:nth-child(2)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(3) .img_wrap img").attr("src", "img/heo_main_short_navy.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(3) .color_box>li:nth-child(3)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(3) .img_wrap img").attr("src", "img/heo_main_short_tro.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(3) .color_box>li:nth-child(4)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(3) .img_wrap img").attr("src", "img/heo_main_short_blackgray.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(3) .color_box").mouseleave(function(){
+        $("#main .con_12 .con_list>li:nth-child(3) .img_wrap img").attr("src", "img/heo_con3.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(4) .color_box>li:nth-child(1)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(4) .img_wrap img").attr("src", "img/slogan_shirt.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(4) .color_box>li:nth-child(2)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(4) .img_wrap img").attr("src", "img/heo_con4.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(4) .color_box").mouseleave(function(){
+        $("#main .con_12 .con_list>li:nth-child(4) .img_wrap img").attr("src", "img/heo_con4.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(5) .color_box>li:nth-child(1)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(5) .img_wrap img").attr("src", "img/heo_back_black.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(5) .color_box>li:nth-child(2)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(5) .img_wrap img").attr("src", "img/heo_back_blackgray.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(5) .color_box>li:nth-child(3)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(5) .img_wrap img").attr("src", "img/heo_back_navy.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(5) .color_box>li:nth-child(4)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(5) .img_wrap img").attr("src", "img/heo_back_white.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(5) .color_box").mouseleave(function(){
+        $("#main .con_12 .con_list>li:nth-child(5) .img_wrap img").attr("src", "img/heo_con5.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(6) .color_box>li:nth-child(1)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(6) .img_wrap img").attr("src", "img/main_logo_black.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(6) .color_box>li:nth-child(2)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(6) .img_wrap img").attr("src", "img/main_logo_blue.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(6) .color_box>li:nth-child(3)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(6) .img_wrap img").attr("src", "img/main_logo_gray.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(6) .color_box>li:nth-child(4)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(6) .img_wrap img").attr("src", "img/main_logo_black_gray.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(6) .color_box>li:nth-child(5)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(6) .img_wrap img").attr("src", "img/main_logo_white.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(6) .color_box").mouseleave(function(){
+        $("#main .con_12 .con_list>li:nth-child(6) .img_wrap img").attr("src", "img/heo_con6.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(8) .color_box>li:nth-child(1)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(8) .img_wrap img").attr("src", "img/main_logo_white.png");
+    });
 });
 
 

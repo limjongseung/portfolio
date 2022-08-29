@@ -621,6 +621,9 @@ body{font-family: 'Montserrat', sans-serif;}
 #main .con_8 .img_wrap .text_sub p:nth-child(4){
     font-size: 20px;
 }
+#main .con_8 .img_wrap .text_sub p:nth-child(4) a img{
+    transform: translateY(8px);
+}
 #main .con_8 .img_wrap .text_main{
     color: white;
     font-size: 87px;
@@ -673,10 +676,8 @@ body{font-family: 'Montserrat', sans-serif;}
     left:0;
     top:0;
     transition:all 1s;
-
 }
 #main .con_10 .con_list >li .img_wrap:hover p {
-    left:50px;
     transition-delay:0.25s;
 }
 #main .con_10 .con_list >li .img_wrap img{
@@ -685,23 +686,23 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 #main .con_10 .con_list >li .img_wrap:hover img{
     transform: scale(1.5) translate(0,-25px);
-    left:50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#main .con_10 .con_list >li:nth-child(1) .img_wrap:hover p {
+    top: 100px;
+    transition-delay:0.25s;
+}
+#main .con_10 .con_list >li:nth-child(3) .img_wrap:hover p {
+    top: 100px;
+    transition-delay:0.25s;
+}
+#main .con_10 .con_list >li:nth-child(7) .img_wrap:hover p {
+    left: -50px;
+    transition-delay:0.25s;
+}
+#main .con_10 .con_list >li:nth-child(7) .img_wrap:hover img{
+    transform: scale(1.5) translate(0,25px);
+    left:-50px;
+}
 #main .con_10 .con_list >li h4{
     margin-bottom: 5px;
 }
@@ -719,6 +720,7 @@ body{font-family: 'Montserrat', sans-serif;}
     margin-top: 15px;
 }
 #main .con_10 .con_list>li .color_box>li{
+    cursor: pointer;
     margin-right: 7px;
     transform:scale(1);
     transition:all 0.2s;
@@ -782,6 +784,42 @@ body{font-family: 'Montserrat', sans-serif;}
     font-size: 12px;
     padding-bottom: 80px;
 }
+#main .con_12 .con_list >li .img_wrap{
+    margin-bottom: 18px;
+    width:300px;
+    height:450px;
+    overflow:hidden;
+}
+#main .con_12 .con_list >li .img_wrap p{
+    position: relative;
+    left:0;
+    top:0;
+    transition:all 1s;
+}
+#main .con_12 .con_list >li:nth-child(1) .img_wrap:hover p {
+    top: 105px;
+    transition-delay:0.25s;
+}
+#main .con_12 .con_list >li:nth-child(3) .img_wrap:hover p {
+    top: -50px;
+    left: -50px;
+    transition-delay:0.25s;
+}
+#main .con_12 .con_list >li:nth-child(4) .img_wrap:hover p {
+    left: -75px;
+    transition-delay:0.25s;
+}
+#main .con_12 .con_list >li:nth-child(7) .img_wrap:hover p {
+   top: 80px;
+    transition-delay:0.25s;
+}
+#main .con_12 .con_list >li .img_wrap img{
+    transform: scale(1) translate(0,0);
+    transition:all 1s;
+}
+#main .con_12 .con_list >li .img_wrap:hover img{
+    transform: scale(1.5) translate(0,-25px);
+}
 #main .con_12 .con_list >li{
     margin-bottom: 25px;
 }
@@ -805,12 +843,21 @@ body{font-family: 'Montserrat', sans-serif;}
     margin-top: 15px;
 }
 #main .con_12 .con_list>li .color_box>li{
+    cursor: pointer;
     margin-right: 7px;
+    transform:scale(1);
+    transition:all 0.2s;
 }
 #main .con_12 .con_list>li .color_box>li:last-child{
     margin-right: 0;
 }
-
+#main .con_12 .con_list>li .color_box>li.low{
+    transform: scale(0.85);
+}
+#main .con_12 .con_list>li .color_box>li.up{
+    transform: scale(1.2);
+}
+/* main END */
 #footer{
     background: black;
     color: #B5B5B5;

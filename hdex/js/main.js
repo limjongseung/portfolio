@@ -2,14 +2,46 @@
 $(document).on("scroll",function(){
     let scrollTop = $(document).scrollTop();
     $(".scroll_box").text(scrollTop);
+    //원형 로고 이미지 구동 
     $("#main .con_4 .img_wrap1 .img_elipse img").css("transform","rotate("+ scrollTop/3 + "deg");
+    //밴드 이미지 구동
     $("#main .con_band .img_wrap img").css("transform","translateX(" + -scrollTop/1.5 + "px");
-    if( scrollTop>=800) {
+    if( scrollTop>=788) {
         $("#main .con_2 .img_wrap").addClass("on");
         $("#main .con_2  .text_wrap .text_wrap_1 .text_e").addClass("on");
     }
 });
+//헤더 색상 변경
+$(document).on("scroll",function(){
+    let scrollTop = $(document).scrollTop();
+    if(scrollTop >= 720){
+        $("h1 img").attr("src","img/hdex_black.png");
+        $("#header").css("color","black");
+        $("#header nav .gnb>li:nth-child(2) img, #header nav .gnb>li:nth-child(3) img").attr("src","img/black_x.png");
+        $("#header nav .gnb>li").addClass("on");
+    }
+});
+$(document).on("scroll",function(){
+    let scrollTop = $(document).scrollTop();
+    if(scrollTop <= 720){
+        $("h1 img").attr("src","img/hdex_main.png");
+        $("#header").css("color","white");
+        $("#header nav .gnb>li:nth-child(2) img, #header nav .gnb>li:nth-child(3) img").attr("src","img/white_x.png");
+        $("#header nav .gnb>li").removeClass("on");
+    }
+});
+//헤더 클릭시 해당영역으로 이동
+$("#header nav gnb>li a").click(function(){
+    x= $(this).attr("href");
+    $("html, body").stop().animate({scrollTop : $(x).offset().top },1000);
+})
+$("#main .con_3 .text_wrap .text_wrap_link a, #main .con_7  .text_wrap .text_link a").click(function(){
+    x= $(this).attr("href");
+    $("html, body").stop().animate({scrollTop : $(x).offset().top },100);
+})
 
+
+//스크롤 이벤트
 $(document).on("scroll",function(){
     let scrollTop = $(document).scrollTop();
     if(scrollTop >= 850){
@@ -103,29 +135,6 @@ $(document).on("scroll",function(){
             $("#main .con_7 .text_wrap .text_scroll").addClass("on")
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // 상품색상 육각형 호버 효과
 $(function(){
@@ -460,7 +469,19 @@ $(function(){
         $("#main .con_12 .con_list>li:nth-child(6) .img_wrap img").attr("src", "img/heo_con6.png");
     });
     $("#main .con_12 .con_list>li:nth-child(8) .color_box>li:nth-child(1)").mouseenter(function(){
-        $("#main .con_12 .con_list>li:nth-child(8) .img_wrap img").attr("src", "img/main_logo_white.png");
+        $("#main .con_12 .con_list>li:nth-child(8) .img_wrap img").attr("src", "img/heo_trackshort_black.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(8) .color_box>li:nth-child(2)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(8) .img_wrap img").attr("src", "img/heo_trackshort_gray.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(8) .color_box>li:nth-child(3)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(8) .img_wrap img").attr("src", "img/heo_trackshort_blackgray.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(8) .color_box>li:nth-child(4)").mouseenter(function(){
+        $("#main .con_12 .con_list>li:nth-child(8) .img_wrap img").attr("src", "img/heo_trackshort_mustard.png");
+    });
+    $("#main .con_12 .con_list>li:nth-child(8) .color_box").mouseleave(function(){
+        $("#main .con_12 .con_list>li:nth-child(8) .img_wrap img").attr("src", "img/heo_con8.png");
     });
 });
 

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 *{margin: 0; padding: 0; border:0; box-sizing: border-box;}
+html{scroll-behavior: smooth;}
 ol,ul,dl{list-style: none;}
 a{text-decoration: none; color: inherit;}
 /* font */
@@ -34,6 +35,7 @@ body{font-family: 'Montserrat', sans-serif;}
     font-size: 25px;
     font-weight: 600;
     margin: 0 20px;
+    transition: all 0.5s;
 }
 #header nav .gnb{
     display: flex;
@@ -45,10 +47,16 @@ body{font-family: 'Montserrat', sans-serif;}
 #header nav .gnb>li:nth-child(4)::after {
     display:block;
     content: '';
-    border-bottom: solid 3px white;  
+    border-bottom: solid 3px white;
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
   }
+#header nav .gnb>li.on:nth-child(2)::after,
+#header nav .gnb>li.on:nth-child(3)::after,
+#header nav .gnb>li.on:nth-child(4)::after {
+    border-color: black;
+}
+
   #header nav .gnb>li:nth-child(2):hover:after,
   #header nav .gnb>li:nth-child(3):hover:after,
   #header nav .gnb>li:nth-child(4):hover:after
@@ -327,6 +335,14 @@ body{font-family: 'Montserrat', sans-serif;}
     font-weight: 600;
     margin-bottom: 5px;
 }
+#main .con_3 .text_wrap .text_wrap_link img{
+    animation: up_down 2s infinite;
+}
+@keyframes up_down{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(8px);}
+    100%{transform: translateY(0px);}
+}
 #main .con_3 .text_wrap .text_wrap_link.on{
     height: 112px;
 }
@@ -577,6 +593,9 @@ body{font-family: 'Montserrat', sans-serif;}
     font-size: 20px;
     font-weight: 500;
 }
+#main .con_7  .text_wrap .text_link img{
+    animation: up_down 2s infinite;
+}
 #main .con_7 .text_wrap .text_link p{
     margin-bottom: 5px;
 }
@@ -622,7 +641,12 @@ body{font-family: 'Montserrat', sans-serif;}
     font-size: 20px;
 }
 #main .con_8 .img_wrap .text_sub p:nth-child(4) a img{
-    transform: translateY(8px);
+    animation: move_right 2s infinite;
+}
+@keyframes move_right{
+    0%{transform: translate(5px,8px);}
+    50%{transform: translate(15px,8px);}
+    100%{transform: translate(5px,8px);}
 }
 #main .con_8 .img_wrap .text_main{
     color: white;
@@ -811,6 +835,10 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 #main .con_12 .con_list >li:nth-child(7) .img_wrap:hover p {
    top: 80px;
+    transition-delay:0.25s;
+}
+#main .con_12 .con_list >li:nth-child(8) .img_wrap:hover p {
+   top: 50px;
     transition-delay:0.25s;
 }
 #main .con_12 .con_list >li .img_wrap img{

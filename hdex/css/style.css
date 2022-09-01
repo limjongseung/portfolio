@@ -1148,9 +1148,85 @@ body{font-family: 'Montserrat', sans-serif;}
     #header nav .gnb>li .hamburger{
         display: block;
     }
+    #main .con_8 .img_wrap .text_wrap{
+        flex-direction: column-reverse;
+    }
+    #main .con_8 .img_wrap .text_main{
+        margin: 0 0 20px;
+    }
+    #main .con_8 .img_wrap .text_wrap{
+        width: 480px;
+    }
+    #main .con_5 .img_wrap .logo_wrap {
+        right: 3px;
+    }
+    #main .con_1 .logo_wrap2, #main .con_1 .logo_wrap4, #main .con_1 .logo_wrap6, #main .con_1 .logo_wrap8, #main .con_1 .logo_wrap10{
+        left: 25%;
+    }
+    #main .con_1 .logo_wrap, #main .con_1 .logo_wrap3, #main .con_1 .logo_wrap5, #main .con_1 .logo_wrap7, #main .con_1 .logo_wrap9{
+        left: 25%;
+    }
+    #main .con_8 .img_wrap{
+        height: 250px;
+    }
+    #main .con_4 .img_wrap1 .img_text {
+        width: 485px;
+    }
+    #main .con_4 .img_wrap1{
+        width: 657px;
+    }
+    #main .con_band .img_wrap{
+        padding-bottom: 80px;
+    }
 }
+@media (max-width: 820px){
+    /* 메인로고 위치 바꾸기 */
+    #main .con_2 .img_wrap{
+        width: 500px;
+        height: 617px;
+    }
+    #main .con_2 .img_wrap p img{
+        width: 500px;
+        filter: brightness(120%);
+    }
+    #main .con_5 .img_wrap{
+        width: 500px;
+        height: 750px;
+    }
+    #main .con_5 .img_wrap p img{
+        width: 500px;
+    }
+    #main .con_5 .img_wrap .logo_wrap{
+        top: 2%;
+    }
+    #main .con_5 .text_wrap {
+        width: 520px;
+        font-size: 20px;
+    }
+    #main .con_6 .img_wrap2 {
+        width: 500px;
+        height: 610px;
+    }
+    #main .con_6 .img_wrap2 p img{
+        width: 500px;
+    }
+
+    #main .gray_wrap .gray .con_wrap {
+        width: 610px;
+    }
+    #main .gray_wrap .gray .text_wrap{
+        font-size: 20px;
+    }
+    #main .gray_wrap .gray .text_wrap p:first-child{
+        font-size: 22px;
+    }
+    #footer .footer_wrap .text_sub {
+        width:400px;
+    }
+}
+
 /* 1420px 에서 요소 부딪칠때 해결 */
-/* */
+/* qhanftjs7@naver.com */
 
 
 

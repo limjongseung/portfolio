@@ -113,8 +113,10 @@ $(document).on("scroll",function(){
     let windowWidth = $(window).width();
     if(scrollTop >= 5200 && windowWidth > 1420){
             $("#main .con_6 .img_wrap1>p").addClass("on")
-    } else if (scrollTop >= 5300 && windowWidth <= 1420){
+    } else if (scrollTop >= 5300 && windowWidth > 920 && windowWidth <= 1420){
         $("#main .con_6 .img_wrap1>p").addClass("on")
+    } else if (scrollTop >= 5100 && windowWidth <= 920){
+           $("#main .con_6 .img_wrap1>p").addClass("on")
     }
 });
 $(document).on("scroll",function(){
@@ -123,8 +125,6 @@ $(document).on("scroll",function(){
             $("#main .con_6 .img_wrap1 .img_text .text_scroll").addClass("on")
     }
 });
-// 이미지가 아닌 텍스트를 가로로 나오게 했을시  글자가 타이핑하듯 나오는 현상 해결
-
 $(document).on("scroll",function(){
     let scrollTop = $(document).scrollTop();
     let windowWidth = $(window).width();
@@ -134,7 +134,9 @@ $(document).on("scroll",function(){
         $("#main .con_6 .img_wrap2>p").addClass("on")
     } else if(scrollTop >= 6400 && 1220<windowWidth && windowWidth<=1310){
         $("#main .con_6 .img_wrap2>p").addClass("on")
-    } else if(scrollTop >=6100 && 1220>= windowWidth){
+    } else if(scrollTop >=6100 && windowWidth >920 && windowWidth < 1220){
+        $("#main .con_6 .img_wrap2>p").addClass("on")
+    } else if(scrollTop >=6000 && windowWidth <=920){
         $("#main .con_6 .img_wrap2>p").addClass("on")
     }
 });
@@ -149,7 +151,7 @@ $(document).on("scroll",function(){
         $("#main .con_7 .img_wrap>p").addClass("on")
     } else if(scrollTop >= 7000 && windowWidth<= 1220 ){
         $("#main .con_7 .img_wrap>p").addClass("on")
-    }
+    } 
 });
 $(document).on("scroll",function(){
     let scrollTop = $(document).scrollTop();

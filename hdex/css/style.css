@@ -56,11 +56,53 @@ body{font-family: 'Montserrat', sans-serif;}
 #header nav .gnb>li.on:nth-child(4)::after {
     border-color: black;
 }
-
   #header nav .gnb>li:nth-child(2):hover:after,
   #header nav .gnb>li:nth-child(3):hover:after,
   #header nav .gnb>li:nth-child(4):hover:after
    { transform: scaleX(1); }
+   #header nav .gnb>li .hamburger{
+    display: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+   }
+   #header nav .gnb>li .hamburger span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    }
+    #header nav .gnb>li .hamburger.on span:nth-child(1){
+        transform: rotate(45deg) translate(14px, 11px);
+    }
+    #header nav .gnb>li .hamburger.on span:nth-child(2){
+        display: none;
+    }
+    #header nav .gnb>li .hamburger.on span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .mega_menu{
+        width: 100%;
+        height: 100vh;
+        background: #2c2c2c;
+        position: fixed;
+        /* left: 50vw; */
+        left: 100vw;
+        top: 0;
+        z-index: -1;
+        transition: left 0.5s;
+    }
+    .mega_menu .mega_gnb{
+        margin-top: 150px;
+        transform: translateX(-25%);
+        text-align: center;
+    }
+    .mega_menu .mega_gnb ul>li {
+        margin-bottom: 40px;
+    }
+
 
 /* header END */
 #main .con_1{
@@ -280,7 +322,7 @@ body{font-family: 'Montserrat', sans-serif;}
     transition: all 0.5s;
 }
 #main .con_3  .img_wrap>p:first-child.on{
-    width: 915px;
+    width: 100%;
 }
 
 #main .con_3  .img_wrap .img_text{
@@ -392,7 +434,7 @@ body{font-family: 'Montserrat', sans-serif;}
 
 #main .con_4 .img_wrap1 .img_text{
     position: absolute;
-    width: 780px;
+    width: 700px;
     height: 0px;
     overflow: hidden;
     transition: all 0.5s;
@@ -580,13 +622,19 @@ body{font-family: 'Montserrat', sans-serif;}
 }
 
 #main .con_7  .text_wrap{
+    width: 648px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
     font-size: 41px;
     text-align: center;
     font-weight: 700;
+    /* transform: translateX(-200px); */
 }
-
-#main .con_7 .text_wrap .text_scroll>p{
-    transform: translateX(-10%);
+#main .con_7  .text_wrap.on{
+    height: 242px;
+}
+#main .con_7 .text_wrap .text_scroll{
     margin-bottom: 70px;
 }
 #main .con_7  .text_wrap .text_link{
@@ -679,14 +727,6 @@ body{font-family: 'Montserrat', sans-serif;}
 #main .con_10 .con_list >li{
     margin-bottom: 25px;
 }
-
-
-
-
-
-
-
-
 /* ! 호버시 움직이는 효과 추가 */
 
 #main .con_10 .con_list >li .img_wrap{
@@ -758,10 +798,6 @@ body{font-family: 'Montserrat', sans-serif;}
 #main .con_10 .con_list>li .color_box>li.up{
     transform: scale(1.2);
 }
-
-
-
-
 #main .gray_wrap{
     width: 100%;
     background-color: white;
@@ -897,6 +933,11 @@ body{font-family: 'Montserrat', sans-serif;}
     padding-top: 20px;
     margin:  0 100px;
 }
+#footer .footer_wrap .text_sub{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
 #footer .footer_wrap .text_left p{
     margin-bottom: 5px;
 }
@@ -927,7 +968,189 @@ body{font-family: 'Montserrat', sans-serif;}
     margin-bottom: 10px;
     color: white;
 }
+@media ( max-width: 1420px ){
+    #main .con_6 .img_wrap1{
+        margin: 0 auto 50px;
+    }
+    #main .con_6 .img_wrap2{
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    #main .con_7 {
+        display: block;
+    }
+    #main .con_7 .img_wrap{
+        margin: 0 auto 50px;
+    }
+    #main .con_7 .text_wrap{
+        margin: 0 auto ;
+    }
+    #main .con_7 .text_wrap .text_link{
+        transform: translateY(-30px);
+    }
 
+}
+@media ( max-width: 1310px ){
+    #main .con_3{
+        display: block;
+    }
+    #main .con_3 .text_wrap {
+        width: 380px;
+    }
+    #main .con_3 .text_wrap .text_wrap_main {
+        margin-bottom: 50px;
+    }
+    #main .con_3 .text_wrap .text_wrap_link{
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    #main .con_3 .img_wrap{
+        margin: 0 auto;
+    }
+    #main .con_4 .img_wrap1 .img_text{
+        left: 0%;
+    }
+    #main .con_5 .text_wrap{
+        width: 1022px;
+        margin: 0 auto;
+    }
+    #main .con_6{
+        display: block;
+    }
+}
+@media ( max-width: 1270px ){
+    #main .con_10 .con_box{
+        width: 1050px;
+    }
+    #main .con_12 .con_box{
+        width: 1050px;
+    }
+}
+@media ( max-width: 1220px ){
+    #main .con_2{
+        display: block;
+    }
+    #main .con_2 .img_wrap{
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    #main .con_2 .text_wrap{
+        width: 370px;
+        margin: 0 auto;
+        transform: translateY(-300%);
+    }
+    #main .con_3 {
+        padding-bottom: 50px;
+    }
+    #main .con_4{
+        display: block;
+    }
+    #main .con_4 .img_wrap1{
+        width: 780px;
+        margin: 0 auto;
+    }
+    #main .con_4 .img_wrap2{
+        display: none;
+    }
+    #main .con_4 .img_wrap1 .img_elipse {
+        right: 0;
+    }
+    #main .con_6 .img_wrap1 .img_text {
+        top: 50%;
+        right:-50%;
+    }
+
+    #main .con_8 .img_wrap .text_wrap {
+        width: 900px;
+    }
+    #main .con_8 .img_wrap .text_sub p:nth-child(1) {
+        font-size: 27px;
+    }
+    #main .con_8 .img_wrap .text_main{
+        font-size: 58px;
+    }
+    #footer .footer_wrap{
+        display: block;
+        text-align: center;
+        word-break: keep-all;
+    }
+    #footer .footer_wrap .text_sub{
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+}
+@media ( max-width: 1080px){
+    #main .con_1 .logo_wrap, #main .con_1 .logo_wrap3, #main .con_1 .logo_wrap5, #main .con_1 .logo_wrap7, #main .con_1 .logo_wrap9{
+        left: 28%;
+    }
+    #main .con_1 .logo_wrap2, #main .con_1 .logo_wrap4, #main .con_1 .logo_wrap6, #main .con_1 .logo_wrap8, #main .con_1 .logo_wrap10{
+        left: 28%;
+    }
+    #main .con_4 .img_wrap1 .img_text{
+        left: -10%;
+        font-size: 30px;
+    }
+    #main .con_10 .con_box{
+        width: 670px;
+    }
+    #main .con_12 .con_box{
+        width: 670px;
+    }
+    #main .con_5 .text_wrap {
+        font-size: 30px;
+        width: 777px;
+    }
+}
+@media ( max-width: 1050px){
+    #main .con_4 .img_wrap1 .img_elipse {
+        top: 1%;
+        right: 18%;
+    }
+    #main .con_6 .img_wrap1 .img_text {
+        top: 64%;
+        left: 3%;
+    }
+}
+@media (max-width: 960px){
+    #main .con_3 .img_wrap{
+        width: 98vw;
+    }
+    #main .con_3 .img_wrap img{
+        width: 100%;
+        height: auto;
+    }
+    #main .gray_wrap .gray .con_wrap{
+        display: block;
+        margin: 0 auto;
+    }
+    #main .gray_wrap .gray {
+        height: 420px;
+    }
+    #main .gray_wrap .gray .con_wrap .img_wrap{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #main .gray_wrap .gray .con_wrap .text_wrap{
+        text-align: center;
+    }
+    #main .gray_wrap .gray .con_wrap{
+        width: 765px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 920px){
+    #header nav .gnb>li:nth-child(2),
+    #header nav .gnb>li:nth-child(3),
+    #header nav .gnb>li:nth-child(4){
+        display: none;
+    }
+    #header nav .gnb>li .hamburger{
+        display: block;
+    }
+}
+/* 1420px 에서 요소 부딪칠때 해결 */
+/* */
 
 
 

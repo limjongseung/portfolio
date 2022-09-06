@@ -48,10 +48,17 @@ $(function(){
             }
         }
     });
-
     $(".move_first a").on("click",function(){
         $("#header").removeClass("on");
     });
+    //해상도가 충분하지 않을때 모달창
+    $(window).on("resize",function(){
+        let windowWidth = $(window).width();
+        $(".window span").text(windowWidth);
+        if(windowWidth>= 1745){
+            $(".window").css("display","none");
+        } else{$(".window").css("display","block")};
+    })
 });
 
 //  로고 움직임

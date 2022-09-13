@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+*{margin: 0; padding: 0; border:0; box-sizing: border-box;}
+ol,ul,dl{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{font-family: "Roboto","sans-serif";}
+/* 한글폰트 : 'Noto Sans KR' */
+/* 영문폰트 : 'Roboto', */
+/* font */
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* ! span 태그는 한글폰트로 통일한다. */
+span{font-family: 'Noto Sans KR', sans-serif;}
+#first{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/first_bg.png) no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+#first .main_title{
+    position: absolute;
+    left: 80px;
+    top: 120px;
+    text-transform: uppercase;
+}
+#first .main_title h1{
+    font-size: 88px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#first .main_title h4{
+    font-size: 20px;
+}
+#first .main_title h4:first-child{
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

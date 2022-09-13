@@ -21,6 +21,7 @@ $(document).on("scroll",function(){
         $("#header .mega_menu .mega_gnb ul>li:nth-child(1) img, #header .mega_menu .mega_gnb ul>li:nth-child(2) img").attr("src","img/black_x.png");
         $("#header nav .gnb>li").addClass("on");
         $("#header nav .gnb>li .hamburger span").css("background","black");
+        $("#header").css("background","rgba(255, 255, 255, 0.5)")
     }
 });
 $(document).on("scroll",function(){
@@ -33,6 +34,7 @@ $(document).on("scroll",function(){
         $("#header nav .gnb>li .hamburger span").css("background","white");
         $("#header nav .gnb>li:nth-child(2) img, #header nav .gnb>li:nth-child(3) img").attr("src","img/white_x.png");
         $("#header .mega_menu .mega_gnb ul>li:nth-child(1) img, #header .mega_menu .mega_gnb ul>li:nth-child(2) img").attr("src","img/white_x.png");
+        $("#header").css("background","transparent")
     }
 });
 //햄버거 메뉴 구동

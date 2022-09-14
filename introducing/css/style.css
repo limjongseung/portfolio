@@ -36,8 +36,46 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 #first .main_title h4:first-child{
     margin-bottom: 5px;
 }
+#first .per_info{
+    position: absolute;
+    top: 626px;
+    left: 78px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#first .per_info h4,
+#first .per_info p:nth-child(3){
+    margin-bottom: 10px;
+}
+#first .per_info p:nth-child(2){
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+#first .per_info::before{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+#first header{
+    position: absolute;
+    bottom: 150px;
+    right:200px;
+    width: 200px;
+    color: #FFBE5B;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+#first header nav .gnb li{
+    margin-bottom: 15px;
+}
 
-
+/* first END */
 
 
 

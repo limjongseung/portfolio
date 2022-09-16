@@ -1,3 +1,16 @@
+// gnb 밑줄표시 구동 js
+let verticalBar = document.getElementById("vertical_underline");
+let verticalMenus = document.querySelectorAll("header .gnb>li a");
+
+function verticalIndicator(e) {
+    verticalBar.style.left = e.offsetLeft + "px";
+    verticalBar.style.width = e.offsetWidth + "px";
+    verticalBar.style.top = e.offsetTop + e.offsetHeight + "px";
+}
+
+verticalMenus.forEach((menu) =>
+    menu.addEventListener("mouseover", (e) => verticalIndicator(e.currentTarget))
+);
  //#second text 구동
  var words = document.getElementsByClassName('word');
  var wordArray = [];
@@ -53,24 +66,34 @@
  changeWord();
  setInterval(changeWord, 3000);         
 
- //배경화면 바뀌는 구동
-// $(document).ready(function(){
-//     if($("#second .text_main .text p:nth-child(2) span").hasClass("in") === true){
-//         $("#second").css("background-image","url(../img/second_bg2.png)")
-//     }else{
-//         $("#second").css("background-image","url(../img/second_bg1.png)")
-//     }
-// });
-$(document).ready(function(){
-    if($("#second .text_main .text p:nth-child(2)").hasClass("in")){
-        $("#second").css("background-image","url(./img/second_bg2.png)")
-    } else{
-        $("#second").css("background-image","url(./img/second_bg1.png)")
-    }
-});
-
-
-
+ //slick-slider 구동
+ $(".work_slide").slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    arrows : true,
+    draggable : true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
 
 

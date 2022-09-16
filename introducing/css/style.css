@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+html{scroll-behavior: smooth;}
 *{margin: 0; padding: 0; border:0; box-sizing: border-box;}
 ol,ul,dl{list-style: none;}
 a{text-decoration: none; color: inherit;}
@@ -74,7 +75,15 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 #first header nav .gnb li{
     margin-bottom: 15px;
 }
-
+#vertical_underline{
+    position: absolute;
+    height: 4px;
+    width: 0px;
+    border-radius: 3px;
+    transition: 0.5s;
+    background: #FFBE5B;
+    z-index: 10;
+}
 /* first END */
 #second{
     position: relative;
@@ -96,13 +105,15 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 }
 #second .text {
 	display: flex;
-	height: 10vh;
 	font-size: 30px;
 	font-weight: 700;
 }
+#second .text p:first-child{
+    transform: translateY(5px);
+}
 #second .text p {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: center;
 	margin-right: 1.3vw;
 }
 #second .text .word {
@@ -149,27 +160,17 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     height: 100vh;
     background: #5B86E5;
 }
-#third .img_wrap2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-80%);
+#third .work_slide{
+    transform: scale(0.7);
+    transition: all 0.5s;
+    opacity: .3;
 }
-#third .img_wrap1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-137%,-32%);
-    z-index: 1;
-}
-#third .img_wrap3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(37%,-52%);
+#third .work_slide.slick-current{
+    transform: scale(1.2);
+    opacity: 1;
 }
 #third .text_wrap{
-    width: 500px;
+    width: 400px;
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -184,6 +185,7 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     color: #FDFFAD;
 }
 #third .text_sub p{
+    font-size: 20px;
     margin-bottom: 3px;
 }
 /* third END */
@@ -192,7 +194,7 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #FFDDAA;
+    background: #FFC267;
 }
 #fourth h3{
     width: 150px;

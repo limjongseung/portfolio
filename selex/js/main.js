@@ -303,34 +303,3 @@ function verticalIndicator1(e) {
 verticalMenus1.forEach((menu1) =>
     menu1.addEventListener("mouseover", (e) => verticalIndicator1(e.currentTarget))
 );
-
-//반응형 jquery
-// $(window).resize(function(){ 
-//     if (window.innerWidth <= 1080 && $("#header").hasClass("slide")){  
-//         $("#header").on({
-//             mouseenter: function () {
-//                 $("h1 img").attr("src", "img/selex_black.png");
-//             },
-//             mouseleave: function () {
-//                 $("h1 img").attr("src", "img/selex_black.png");
-//             }
-//         });
-//     }  
-//     }
-//     }).resize(); 
-
-//반응형 스크롤 이벤트
-// if (window.innerWidth <= 1080) {
-
-//     if (scrollTop >= 200 && scrollTop <= 870 ) {
-//         // 언제 나타날지
-//         $("#intro .intro_container .intro_img .mobile_display").addClass("on");
-//         $("#intro .intro_container .intro_img .watch_display").addClass("on");
-//     }
-
-// }
-
-// if(window.innerWidth <= 1080){
-//     $img = document.querySelector(" h1> a> img");
-//     $img.src = "img/selex_black.png";
-// }

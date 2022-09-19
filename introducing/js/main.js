@@ -1,3 +1,4 @@
+
 // gnb 밑줄표시 구동 js
 let verticalBar = document.getElementById("vertical_underline");
 let verticalMenus = document.querySelectorAll("header .gnb>li a");
@@ -45,7 +46,7 @@ verticalMenus.forEach((menu) =>
 
  function animateLetterIn(nw, i) {
  setTimeout(function() {
-     nw[i].className = 'letter in';
+     nw[i].className = 'letter in background_e';
  }, 340 + (i * 80));
  }
 
@@ -66,34 +67,44 @@ verticalMenus.forEach((menu) =>
  changeWord();
  setInterval(changeWord, 3000);         
 
+ //word에 호버하면 이벤트
+ $(document).ready(function(){
+    if($("#second .word.first span").hasClass("background_e")){
+        $("#second").addClass("bg2");
+        $("#seoncd").removeClass("bg2");
+        $("#seoncd").removeClass("bg3");
+    }
+});
+ $(document).ready(function(){
+    if($("#second .word.second span").hasClass("background_e")){
+        $("#second").addClass("bg2");
+        $("#seoncd").removeClass("bg2");
+        $("#seoncd").removeClass("bg3");
+    }
+});
  //slick-slider 구동
  $(".work_slide").slick({
-    centerMode: true,
-    centerPadding: '60px',
     slidesToShow: 3,
-    arrows : true,
-    draggable : true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    centerMode:true,
+    asNavFor: '.text_slide'
+});
+ $(".text_slide").slick({
+    slide: 'div',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    asNavFor: '.work_slide',
+    arrows:false,
+    fade:true
+});
+
+//1. 슬라이드 화살표
+//2. 슬라이드 구동
+//3. 배경화면 구동
+
 
 
 

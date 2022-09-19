@@ -168,10 +168,12 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     position: relative;
     width: 100%;
     height: 90vh;
+    min-height: 700px;
     background: #5B86E5;
 }
 #third .slide_wrap{
-    width: 1500px;
+    width: 80vw;
+    overflow: hidden;
     margin: 0 auto;
     transform: translateY(30%);
 }
@@ -180,7 +182,7 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 }
 #third .work_slide .slick-slide{
     transition: all 0.5s;
-    opacity: 0.5;
+    opacity: 0.3;
     transform: scale(0.8);
 }
 #third .work_slide .slick-slide.slick-current{
@@ -197,11 +199,14 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     border-radius:100% ;
     background: rgba(0, 0, 0, 0.5);
     border: none;
+    transition: all 0.5s;
+}
+#third .work_slide .slick-arrow:hover{
+    background: rgba(0, 0, 0, 1);
 }
 #third .work_slide button::before{
     font-size:30px;
     color: white;
-    
 }
 #third .work_slide .slick-prev:before{
     font-family: "Font Awesome 6 Free";
@@ -226,7 +231,7 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 #third .text_slide{
     width: 400px;
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 25px;
@@ -245,6 +250,23 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     font-size: 20px;
     margin-bottom: 3px;
 }
+#third .text_sub p:last-child{
+    display: block;
+    width: 200px;
+    padding: 5px 0;
+    margin: 15px auto 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+#third .text_sub p:last-child:hover{
+    transform: scale(1.1);
+}
+
 /* third END */
 
 #fourth{

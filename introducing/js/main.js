@@ -89,7 +89,17 @@ verticalMenus.forEach((menu) =>
     variableWidth: true,
     infinite: true,
     centerMode:true,
-    asNavFor: '.text_slide'
+    asNavFor: '.text_slide',
+    // responsive: [
+    //     {
+    //       breakpoint: 1440,
+    //       settings: {
+    //         slidesToShow: 1,
+    //         centerMode:false,
+    //         slidesToScroll:1
+    //       }
+    //     }
+    // ]
 });
  $(".text_slide").slick({
     slide: 'div',

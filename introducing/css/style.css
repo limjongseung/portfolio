@@ -174,7 +174,7 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 #third .slide_wrap{
     /* width: 80vw; */
     width: 80%;
-    padding: 20px 0;
+    padding: 90px 0 40px ;
     overflow: hidden;
     margin: 0px auto;
     /* transform: translateY(30%); */
@@ -232,13 +232,8 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     color: transparent;
 }
 #third .text_slide{
-    /* width: 400px; */
-    /* width: 700px; */
-    width: 100%;
-    /* position: absolute; */
-    /* bottom: 10%; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+    width:900px;
+    margin:0 auto;
     font-size: 25px;
     color: white;
     text-align: center;
@@ -251,6 +246,11 @@ span{font-family: 'Noto Sans KR', sans-serif;}
     margin-bottom: 10px;
     text-align: center;
     color: #FDFFAD;
+}
+#third .text_sub{
+    text-align: left;
+    width: 480px;
+    margin: 10px auto 0;
 }
 #third .text_sub p{
     font-size: 20px;

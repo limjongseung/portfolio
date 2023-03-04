@@ -1,0 +1,72 @@
+/* 폰트 jua */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* font-family: 'Jua', sans-serif; */
+
+
+body{
+    margin: 0;
+    background-image:url(../todo_list/img/4882066.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Jua', sans-serif;
+}
+input{
+    height: 35px;
+    margin-right:5px
+}
+.input_area{
+    display: flex;
+    align-items: center;
+}
+.container {
+    padding-top:10px;
+     background: white;
+     min-height: 100vh;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .task_area {
+        border: 1px solid lightgray;
+        margin-top: 2em;
+    }
+    .task_tabs{
+        position: relative;
+        display: flex;
+        border-bottom: 1px solid lightgray;
+    }
+    .task_tabs div{
+        padding: 1em;
+    }
+    #under_line{
+        height: 4px;
+        /* background: lightskyblue; */
+        position: absolute;
+        width: 60px;
+        left: 0;
+        top: 67px;
+        padding: 0px;
+        transition: all 0.5s;
+        /* border-radius: 50%; */
+    }
+    .task {
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.25s;
+    }
+    .task_done {
+        text-decoration: line-through;
+        /* transition: all  0.25s; */
+    }
+    .task_tabs div{
+        cursor: pointer;
+    }
+    .task_default{
+        text-align: center;
+        font-size: 30px;
+        /* text-decoration: underline; */
+    }
+.menu{
+    font-size: 20px;
+}
+
+
+

@@ -2,8 +2,6 @@
     $("#full_page").fullpage({
         licenseKey: "",
         autoScrolling:true,
-        navigation:true,
-        
 });
 
 // gnb 밑줄표시 구동 js

@@ -1,3 +1,8 @@
+//full ppage js
+    $("#full_page").fullpage({
+        licenseKey: "",
+        autoScrolling:true,
+});
 
 // gnb 밑줄표시 구동 js
 let verticalBar = document.getElementById("vertical_underline");

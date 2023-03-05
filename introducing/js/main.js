@@ -1,7 +1,9 @@
 //full ppage js
     $("#full_page").fullpage({
+        anchors:['section0','section1','section2','section3'],
         licenseKey: "",
         autoScrolling:true,
+
 });
 
 // gnb 밑줄표시 구동 js
